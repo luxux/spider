@@ -1,0 +1,186 @@
+{
+    "proxyType": 0, 
+    "randomAlgorithm": 1, 
+    "sysProxyMode": 1, 
+    "localPort": 1080, 
+    "localAuthPassword": "FGkk7Q_8ULXqN_EhWuk7", 
+    "random": true, 
+    "authPass": "", 
+    "autoBan": true, 
+    "proxyUserAgent": "", 
+    "proxyAuthUser": "", 
+    "proxyAuthPass": "", 
+    "bypassWhiteList": false, 
+    "index": 56, 
+    "sameHostForSameTarget": false, 
+    "proxyRuleMode": 0, 
+    "portMap": {}, 
+    "TTL": 60, 
+    "connect_timeout": 5, 
+    "reconnectTimes": 4, 
+    "authUser": "", 
+    "keepVisitTime": 180, 
+    "proxyHost": "", 
+    "configs": [
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "153.125.234.175", 
+            "server_port": 31593, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_0", 
+            "password": "kingss.win", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "153.125.234.178", 
+            "server_port": 31219, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_1", 
+            "password": "kingss.win", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "153.125.234.173", 
+            "server_port": 31228, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_2", 
+            "password": "kingss.win", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "153.125.234.174", 
+            "server_port": 31581, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_3", 
+            "password": "kingss.win", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "153.125.232.140", 
+            "server_port": 31845, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_4", 
+            "password": "kingss.ga", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "153.125.232.143", 
+            "server_port": 31320, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_5", 
+            "password": "kingss.ga", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "153.125.232.145", 
+            "server_port": 31095, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_6", 
+            "password": "kingss.ga", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "153.125.232.147", 
+            "server_port": 31690, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_7", 
+            "password": "kingss.ga", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "153.125.232.239", 
+            "server_port": 31754, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_8", 
+            "password": "kingss.ga", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "153.125.232.236", 
+            "server_port": 31200, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_9", 
+            "password": "kingss.ga", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "45.78.47.87", 
+            "server_port": 443, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_10", 
+            "password": "laozhang", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "a.ssx.host", 
+            "server_port": 1024, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_0", 
+            "password": "50246489", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "b.ssx.host", 
+            "server_port": 10008, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_0", 
+            "password": "46760583", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "c.ssx.host", 
+            "server_port": 10008, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_0", 
+            "password": "08360173", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "ss1.ubox.co", 
+            "server_port": 8388, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_0", 
+            "password": "password", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "ss6.ubox.co", 
+            "server_port": 8388, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_1", 
+            "password": "password", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "ss2.ubox.co", 
+            "server_port": 8388, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_2", 
+            "password": "password", 
+            "method": "aes-256-cfb"
+        }
+    ], 
+    "pacDirectGoProxy": false, 
+    "isHideTips": false, 
+    "proxyPort": 0, 
+    "dns_server": "8.8.8.8", 
+    "shareOverLan": false, 
+    "token": {}, 
+    "proxyEnable": false
+}
