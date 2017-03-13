@@ -10,9 +10,9 @@
 - [ ] 不和原有配置发生冲突
 - [ ] 多系统支持
       - [x] Linux
-      - [x] windows
+      - [x] windows
       - [ ] osx
- -[ ] 自动运行
+ - [ ] 自动运行
 ### 安装 Install
 
 #### Windows
