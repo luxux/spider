@@ -1,7 +1,7 @@
 # AutoGetSs
 ### 介绍 Introduction
 
-免费的ss分享站在频繁的更换。~~根本原因是没钱~~。
+~~根本原因是没钱~~。
 
 ### 需求 TODO
 
@@ -23,7 +23,9 @@
 
    ```cmd
    py -2 -m pip install requests
-   py -2 -m pip install beautifulsoup4
+   py -2 -m pip install chardet
+   py -2 -m pip install lxml
    ```
 
 3. 将autogetss.py放在ShadowsocksR文件夹内
+4. 需要ShadowsocksR文件夹内有gui-config.json
