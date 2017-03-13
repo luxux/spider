@@ -7,7 +7,7 @@
 
 - [x] 支持[doub.io](https://doub.io/sszhfx/),[frss.ml](http://frss.ml/),[vpsml](http://ss.vpsml.site/),[isx](http://isx.yt/)
 - [x] 调试日志
-- [x] 不和原有配置发生冲突
+- [ ] 不和原有配置发生冲突
 - [ ] 多系统支持
       - [ ] Linux
       - [x] windows
