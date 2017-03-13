@@ -28,5 +28,7 @@
    ```
 
 3. 将Auto_Ssx.x.x.py放在ShadowsocksR文件夹内
+
 4. 需要ShadowsocksR文件夹内有gui-config.json文件夹
+
 5. 在windows下直接运行Auto_Ss0.1.2.exe
