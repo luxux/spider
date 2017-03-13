@@ -3,7 +3,7 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   koosuf
-# @Last Modified time: 2017-03-14 00:24:44
+# @Last Modified time: 2017-03-14 00:42:50
 
 import re
 import os
@@ -12,7 +12,6 @@ import time
 import json
 import chardet
 import requests
-import subprocess
 from lxml import etree
 
 configs = []
