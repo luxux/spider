@@ -6,10 +6,10 @@
 ### 需求 TODO
 
 - [x] 支持[doub.io](https://doub.io/sszhfx/),[frss.ml](http://frss.ml/),[vpsml](http://ss.vpsml.site/),[isx](http://isx.yt/)
-- [x] 调试日志
+- [ ] 调试日志
 - [ ] 不和原有配置发生冲突
 - [ ] 多系统支持
-      - [ ] Linux
+      - [x] Linux
       - [x] windows
       - [ ] osx
 
@@ -27,5 +27,5 @@
    py -2 -m pip install lxml
    ```
 
-3. 将autogetss.py放在ShadowsocksR文件夹内
-4. 需要ShadowsocksR文件夹内有gui-config.json
+3. 将Auto_Ssx.x.x.py放在ShadowsocksR文件夹内
+4. 需要ShadowsocksR文件夹内有gui-config.json文件夹
