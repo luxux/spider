@@ -9,13 +9,8 @@
 - [ ] 调试日志
 - [ ] 不和原有配置发生冲突
 - [ ] 多系统支持
-<<<<<<< HEAD
-      - [x] Linux
-      - [x] windows
-=======
       - [x] Linux
       - [x] windows
->>>>>>> 09a47e196b59fd7f4699769fe1877fdc47e7239a
       - [ ] osx
  - [ ] 自动运行
 ### 安装 Install
