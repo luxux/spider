@@ -13,7 +13,7 @@
       - [x] windows
       - [ ] osx
  - [ ] 自动运行
- ### 安装 Install
+###install
 
 #### Windows
 
