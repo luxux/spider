@@ -1,9 +1,9 @@
 # AutoGetSs
-### 介绍 Introduction
+### 介绍
 
 ~~没钱、没钱、没钱~~。
 
-### 需求 TODO
+### 需求
 
 - [x] 获取网站[doub.io](https://doub.io/sszhfx/),[frss.ml](http://frss.ml/),[vpsml](http://ss.vpsml.site/),[isx](http://isx.yt/)
 - [ ] 调试日志
@@ -12,7 +12,7 @@
 - [ ] 自动运行
 
 ### install
-[ShadowsocksR安装](https://doub.io/ss-jc10/)
+[ShadowsocksR使用详解](https://doub.io/ss-jc10/)
 
 #### Windows(源码)
 
@@ -39,7 +39,9 @@
 
 1. 下载Auto_Ss0.1.2.exe到ShadowsocksR文件夹
 
-2. 在windows下ShadowsocksR文件夹也管理员运行Auto_Ss0.1.2.exe,需要打开全局代理。
+2. 管理员运行Auto_Ss0.1.2.exe,需要打开全局代理。
 
-3. ShadowsocksR更新gui-config.json文件
+3. ShadowsocksR更新加载gui-config.json文件
+
+#注意: 在加载的过程中有什么任何错误提示，都可以打开ShadowsocksR全局代理。管理员运行Auto_Ss0.1.2.exe **多次**
 
