@@ -11,6 +11,9 @@
 - [ ] 多系统支持
 - [ ] 自动运行
 
+### 效果
+![](./Ss_img.jpg)
+
 ### install
 [ShadowsocksR使用详解](https://doub.io/ss-jc10/)
 
@@ -43,5 +46,4 @@
 
 3. ShadowsocksR更新加载gui-config.json文件
 
-#注意: 在加载的过程中有什么任何错误提示，都可以打开ShadowsocksR全局代理。管理员运行Auto_Ss0.1.2.exe **多次**
-
+###注意: 在加载的过程中有什么任何错误提示，都可以打开ShadowsocksR全局代理。管理员运行Auto_Ss0.1.2.exe **多次**
