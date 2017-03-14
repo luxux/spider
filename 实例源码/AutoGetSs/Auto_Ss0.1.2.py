@@ -3,7 +3,7 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   koosuf
-# @Last Modified time: 2017-03-14 00:42:50
+# @Last Modified time: 2017-03-14 17:17:15
 
 import re
 import os
@@ -53,17 +53,6 @@ def requests_htmls(Src_allurl):
 
 
 def load_Sslist(Ss_user, Ss_passwd, Ss_port, Ss_Enc=['aes-256-cfb']):
-    '''
-    "configs" : [{
-      "server": "86.107.110.163",
-      "server_port": 10093,
-      "password": "forfree",
-      "method": "aes-256-cfb",
-      "remarks": "罗马尼亚无视版权",
-      "auth": false,
-      "timeout": 5
-    }
-    '''
     num = min(len(Ss_user), len(Ss_passwd), len(Ss_port))
     for i in range(num):
         config = {}
@@ -72,7 +61,8 @@ def load_Sslist(Ss_user, Ss_passwd, Ss_port, Ss_Enc=['aes-256-cfb']):
         if Ss_user[i] is None:
             continue
         try:
-            config['remarks'] = u"无视版权_".encode('utf-8') + str(i)
+            config['remarks'] = u"无视版权_".encode(
+                'utf-8') + str(len(configs) + 1)
             config['server'] = Ss_user[i]
             config['server_port'] = int(Ss_port[i])
             config['password'] = Ss_passwd[i]
@@ -84,7 +74,6 @@ def load_Sslist(Ss_user, Ss_passwd, Ss_port, Ss_Enc=['aes-256-cfb']):
             configs.append(config)
         except ValueError:
             continue
-    print(u'此次更新了' + str(len(configs)) + u'条数据')
     return 0
 
 
@@ -100,14 +89,12 @@ def load_config(filename="gui-config.json"):
 
 
 def save_config(filename, data):
-    print(u'正在写入文件……')
     try:
         with open(filename, 'w') as fp:
             fp.write(json.dumps(data, indent=4))
     except IOError:
         msg = u"文件 " + filename + u" 并不存在，请确认程序运行在ShadowsocksR目录中！"
         print(msg)
-    print(u'写入文件完成！')
     return 0
 
 
@@ -238,6 +225,7 @@ def main():
     Ssconfig['configs'] = configs
     save_config(filename, Ssconfig)
 
+    print(u'此次更新了------------' + str(len(configs)) + u'-------------条数据')
     os.system('pause')
 
 if __name__ == '__main__':
