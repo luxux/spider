@@ -1,7 +1,7 @@
 # AutoGetSs
 ### 介绍 Introduction
 
-~~根本原因是没钱~~。
+~~没钱、没钱、没钱~~。
 
 ### 需求 TODO
 
@@ -12,8 +12,9 @@
 - [ ] 自动运行
 
 ### install
+[ShadowsocksR安装](https://doub.io/ss-jc10/)
 
-#### Windows
+#### Windows(源码)
 
 1. 你需要安装python2.7，[下载地址](https://www.python.org/)
 
@@ -27,6 +28,18 @@
 
 3. 将Auto_Ssx.x.x.py放在ShadowsocksR文件夹内
 
-4. 需要ShadowsocksR文件夹内有gui-config.json文件夹
+4. 需要ShadowsocksR文件夹内有gui-config.json文件
 
-5. 在windows下直接运行Auto_Ss0.1.2.exe
+5. 在管理员终端运行如下命令，需要打开全局代理。
+    ```cmd
+    py -2 Auto_Ssx.x.x.py
+    ```
+
+#### Windows(exe)
+
+1. 下载Auto_Ss0.1.2.exe到ShadowsocksR文件夹
+
+2. 在windows下ShadowsocksR文件夹也管理员运行Auto_Ss0.1.2.exe,需要打开全局代理。
+
+3. ShadowsocksR更新gui-config.json文件
+
