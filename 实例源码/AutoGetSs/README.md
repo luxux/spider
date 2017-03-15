@@ -7,11 +7,13 @@
 
 - [x] 获取网站[doub.io](https://doub.io/sszhfx/),[frss.ml](http://frss.ml/),[vpsml](http://ss.vpsml.site/),[isx](http://isx.yt/)
 - [ ] 调试日志
-- [ ] 不和原有配置发生冲突
+- [x] 不和原有配置发生冲突
 - [ ] 多系统支持
 - [ ] 自动运行
 
 ### 效果
+![](./getSs_img.jpg)
+
 ![](./Ss_img.jpg)
 
 ### install
