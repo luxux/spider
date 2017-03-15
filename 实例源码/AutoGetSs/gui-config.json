@@ -7,14 +7,14 @@
     "random": true, 
     "authPass": "", 
     "autoBan": true, 
-    "proxyUserAgent": "", 
+    "portMap": {}, 
     "proxyAuthUser": "", 
     "proxyAuthPass": "", 
     "bypassWhiteList": false, 
     "index": 56, 
     "sameHostForSameTarget": false, 
     "proxyRuleMode": 0, 
-    "portMap": {}, 
+    "proxyUserAgent": "", 
     "TTL": 60, 
     "connect_timeout": 5, 
     "reconnectTimes": 4, 
@@ -25,56 +25,29 @@
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "104.160.172.126", 
-            "server_port": 8388, 
+            "server": "108.61.246.51", 
+            "server_port": 8868, 
             "remarks": "\u65e0\u89c6\u7248\u6743_1", 
-            "password": "ttt", 
-            "method": "aes-256-cfb"
+            "password": "3nObtZK1", 
+            "method": "rc4-md5"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "69.12.73.132", 
-            "server_port": 8388, 
+            "server": "104.128.236.22", 
+            "server_port": 8869, 
             "remarks": "\u65e0\u89c6\u7248\u6743_2", 
-            "password": "789", 
-            "method": "aes-256-cfb"
+            "password": "A5ianxp0", 
+            "method": "rc4-md5"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "64.137.255.63", 
-            "server_port": 8388, 
+            "server": "172.246.47.195", 
+            "server_port": 8870, 
             "remarks": "\u65e0\u89c6\u7248\u6743_3", 
-            "password": "eek", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "64.137.217.55", 
-            "server_port": 8388, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_4", 
-            "password": "kkk", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "64.137.204.231", 
-            "server_port": 8388, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_5", 
-            "password": "wtf", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "104.233.64.114", 
-            "server_port": 8388, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_6", 
-            "password": "vvv", 
-            "method": "aes-256-cfb"
+            "password": "BVYLHLfT", 
+            "method": "rc4-md5"
         }
     ], 
     "pacDirectGoProxy": false, 

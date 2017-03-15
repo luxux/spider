@@ -3,7 +3,7 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   koosuf
-# @Last Modified time: 2017-03-14 17:17:15
+# @Last Modified time: 2017-03-15 10:28:40
 
 import re
 import os
@@ -211,15 +211,36 @@ def get_ss_doubi(Src_url_doubi):
     load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
 
 
+def get_ss_yhyhd(Src_url_yhyhd):
+    # https://xsjs.yhyhd.org/free-ss
+    Ss_users = []
+    Ss_passwds = []
+    Ss_ports = []
+    Ss_Encs = []
+    html_doc = requests_htmls(Src_url_yhyhd)
+    if html_doc is None:
+        print(u'解析失败:' + Src_url_yhyhd)
+        return -1
+    Ss_br = re.findall(
+        "<strong>(.*?)</strong>", html_doc, re.S)
+    for Ss_i in range(len(Ss_br) / 4):
+        Ss_users.append(Ss_br[0 + Ss_i * 4])
+        Ss_passwds.append(Ss_br[3 + Ss_i * 4])
+        Ss_ports.append(Ss_br[1 + Ss_i * 4])
+        Ss_Encs.append(Ss_br[2 + Ss_i * 4])
+    load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
+
+
 def main():
     print("{:#^72}".format(
         ' {} Shadowsocks Update '.format(time.strftime('%Y-%m-%d %H:%M:%S'))
     ))
-    get_ss_frss(Src_url_frss='http://frss.ml/')
+    get_ss_yhyhd(Src_url_yhyhd='https://xsjs.yhyhd.org/free-ss/')
     get_ss_doubi(Src_url_doubi='https://doub.io/sszhfx/')
     get_ss_vpsml(Src_url_vpsml='http://ss.vpsml.site/')
     get_ss_ishadow(Src_url_ishadow='http://isx.yt/')  # 备用网址 isx.yt
     get_ss_vbox(Src_url_vbox='https://www.vbox.co/')
+    get_ss_frss(Src_url_frss='http://frss.ml/')
     filename = 'gui-config.json'
     Ssconfig = load_config(filename)
     Ssconfig['configs'] = configs
