@@ -3,7 +3,7 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   koosuf
-# @Last Modified time: 2017-03-16 21:09:53
+# @Last Modified time: 2017-03-16 23:43:11
 
 import re
 import os
@@ -270,6 +270,34 @@ def get_ss_shadowsocks8(Src_url_ss8):
     load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
 
 
+def get_ss_sspw(Src_url_sspw):
+    # http://www.shadowsocks.asia/mianfei/10.html
+    Ss_users = []
+    Ss_passwds = []
+    Ss_ports = []
+    Ss_Encs = []
+    html_doc = requests_htmls(Src_url_sspw)
+    if html_doc is None:
+        print(u'解析失败:' + Src_url_sspw)
+        return -1
+    p = re.compile('\s+')
+    html_doc = re.sub(p, '', html_doc)
+    # print(html_doc)
+    # 服务器地址
+    re_str = re.findall(
+        '">服务器(.*?)服务器端口(\d+)密码(.*?)代理端口(\d+)加密方式(.*?)临时账号', html_doc, re.S)
+    for r in re_str:
+        Ss_users.append(r[0][-12:])
+        # # 端口
+        Ss_ports.append(r[1])
+        # # 密码
+        Ss_passwds.append(r[2])
+        # # 加密方式
+        Ss_Encs.append(r[4])
+
+    load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
+
+
 def start_get_ss():
     Tstart = time.time()
     get_ss_yhyhd(Src_url_yhyhd='https://xsjs.yhyhd.org/free-ss/')
@@ -279,6 +307,7 @@ def start_get_ss():
     get_ss_vbox(Src_url_vbox='https://www.vbox.co/')
     get_ss_frss(Src_url_frss='http://frss.ml/')
     get_ss_shadowsocks8(Src_url_ss8='http://free.shadowsocks8.cc/')
+    get_ss_sspw(Src_url_sspw='http://www.shadowsocks.asia/mianfei/10.html')
     print(time.time() - Tstart)
 
 
@@ -292,7 +321,7 @@ def main():
     Ssconfig['configs'] = configs
     save_config(filename, Ssconfig)
 
-    print(u'此次更新了------------' + str(len(configs)) + u'-------------条数据')
+    # print(u'此次更新了------------' + str(len(configs)) + u'-------------条数据')
     os.system('pause')
 
 if __name__ == '__main__':
