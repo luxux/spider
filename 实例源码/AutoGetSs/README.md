@@ -26,6 +26,7 @@
 2. 需要安装chardet,lxml和requests模块，在管理员终端运行如下命令
 
    ```cmd
+   py -2 -m pip install futures
    py -2 -m pip install requests
    py -2 -m pip install chardet
    py -2 -m pip install lxml
