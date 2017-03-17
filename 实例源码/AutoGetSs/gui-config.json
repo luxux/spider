@@ -52,9 +52,333 @@
         {
             "timeout": 5, 
             "auth": false, 
+            "server": "216.189.158.147", 
+            "server_port": 11126, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_4", 
+            "password": "doub.io11126", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "104.160.173.141", 
+            "server_port": 11126, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_5", 
+            "password": "doub.io11126", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "64.137.208.113", 
+            "server_port": 11126, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_6", 
+            "password": "doub.io11126", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "45.62.245.70", 
+            "server_port": 11126, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_7", 
+            "password": "doub.io11126", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "64.137.243.186", 
+            "server_port": 11126, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_8", 
+            "password": "doub.io11126", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "47.89.15.68", 
+            "server_port": 54480, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_9", 
+            "password": "rz4QVPSpaLwt", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "103.192.224.35", 
+            "server_port": 54480, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_10", 
+            "password": "rz4QVPSpaLwt", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "103.192.224.171", 
+            "server_port": 54480, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_11", 
+            "password": "rz4QVPSpaLwt", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "172.96.113.132", 
+            "server_port": 54480, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_12", 
+            "password": "rz4QVPSpaLwt", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "47.88.212.234", 
+            "server_port": 54480, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_13", 
+            "password": "rz4QVPSpaLwt", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "103.57.167.16", 
+            "server_port": 54480, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_14", 
+            "password": "rz4QVPSpaLwt", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "103.57.167.32", 
+            "server_port": 54480, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_15", 
+            "password": "rz4QVPSpaLwt", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "45.116.14.62", 
+            "server_port": 54480, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_16", 
+            "password": "rz4QVPSpaLwt", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "45.76.66.200", 
+            "server_port": 50244, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_17", 
+            "password": "doub.io50244", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "107.181.155.146", 
+            "server_port": 8355, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_18", 
+            "password": "IcomefromDoub.io", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "153.125.234.209", 
+            "server_port": 31467, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_19", 
+            "password": "*Fyol.pw*p@sswd5678", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "104.128.233.88", 
+            "server_port": 9000, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_20", 
+            "password": "24691356", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "104.128.236.22", 
+            "server_port": 8869, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_21", 
+            "password": "A5ianxp0", 
+            "method": "rc4-md5"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "172.246.47.195", 
+            "server_port": 8870, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_22", 
+            "password": "BVYLHLfT", 
+            "method": "rc4-md5"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "162.211.224.109", 
+            "server_port": 11296, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_23", 
+            "password": "nexus6p", 
+            "method": "aes-128-ctr"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "86.107.110.163", 
+            "server_port": 10093, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_24", 
+            "password": "forfree", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "153.125.239.205", 
+            "server_port": 31624, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_25", 
+            "password": "doub.io", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "153.125.238.205", 
+            "server_port": 31042, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_26", 
+            "password": "VC4Share@Doub.io", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "153.125.237.239", 
+            "server_port": 31568, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_27", 
+            "password": "sharessr", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "104.160.176.119", 
+            "server_port": 15185, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_28", 
+            "password": "VaPzwK", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "142.4.124.156", 
+            "server_port": 15185, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_29", 
+            "password": "VaPzwK", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "63.223.98.30", 
+            "server_port": 8080, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_30", 
+            "password": "doub.io.kotori", 
+            "method": "chacha20-ietf"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "144.168.62.206", 
+            "server_port": 7739, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_31", 
+            "password": "zA1h8jCBoO", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "104.168.30.5", 
+            "server_port": 2855, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_32", 
+            "password": "doubi.io2855", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "45.76.102.193", 
+            "server_port": 2333, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_33", 
+            "password": "doub1234567", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "104.160.176.8", 
+            "server_port": 2333, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_34", 
+            "password": "doub1234567", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "155.94.230.139", 
+            "server_port": 2333, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_35", 
+            "password": "doub1234567", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "111.221.44.148", 
+            "server_port": 2410, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_36", 
+            "password": "Sealt", 
+            "method": "chacha20-ietf"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "107.167.19.107", 
+            "server_port": 443, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_37", 
+            "password": "hickwall", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "104.160.181.43", 
+            "server_port": 10121, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_38", 
+            "password": "cOxnQYCa", 
+            "method": "aes-128-ctr"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "104.152.190.126", 
+            "server_port": 14130, 
+            "remarks": "\u65e0\u89c6\u7248\u6743_39", 
+            "password": "doub.ioYkBo0aERVF02", 
+            "method": "rc4-md5"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
             "server": "153.125.234.178", 
             "server_port": 31926, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_4", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_40", 
             "password": "kingss.win", 
             "method": "aes-256-cfb"
         }, 
@@ -63,7 +387,7 @@
             "auth": false, 
             "server": "153.125.234.175", 
             "server_port": 31593, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_5", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_41", 
             "password": "kingss.win", 
             "method": "aes-256-cfb"
         }, 
@@ -72,7 +396,7 @@
             "auth": false, 
             "server": "153.125.234.172", 
             "server_port": 31561, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_6", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_42", 
             "password": "kingss.win", 
             "method": "aes-256-cfb"
         }, 
@@ -81,7 +405,7 @@
             "auth": false, 
             "server": "153.125.234.173", 
             "server_port": 31228, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_7", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_43", 
             "password": "kingss.win", 
             "method": "aes-256-cfb"
         }, 
@@ -90,7 +414,7 @@
             "auth": false, 
             "server": "153.125.232.145", 
             "server_port": 31095, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_8", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_44", 
             "password": "kingss.ga", 
             "method": "aes-256-cfb"
         }, 
@@ -99,7 +423,7 @@
             "auth": false, 
             "server": "153.125.232.143", 
             "server_port": 31320, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_9", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_45", 
             "password": "kingss.ga", 
             "method": "aes-256-cfb"
         }, 
@@ -108,7 +432,7 @@
             "auth": false, 
             "server": "153.125.232.145", 
             "server_port": 31327, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_10", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_46", 
             "password": "kingss.ga", 
             "method": "aes-256-cfb"
         }, 
@@ -117,7 +441,7 @@
             "auth": false, 
             "server": "153.125.232.146", 
             "server_port": 31272, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_11", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_47", 
             "password": "kingss.ga", 
             "method": "aes-256-cfb"
         }, 
@@ -126,7 +450,7 @@
             "auth": false, 
             "server": "153.125.232.239", 
             "server_port": 31754, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_12", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_48", 
             "password": "kingss.ga", 
             "method": "aes-256-cfb"
         }, 
@@ -135,7 +459,7 @@
             "auth": false, 
             "server": "153.125.232.236", 
             "server_port": 31200, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_13", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_49", 
             "password": "kingss.ga", 
             "method": "aes-256-cfb"
         }, 
@@ -144,7 +468,7 @@
             "auth": false, 
             "server": "45.78.47.87", 
             "server_port": 443, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_14", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_50", 
             "password": "laozhang", 
             "method": "aes-256-cfb"
         }, 
@@ -153,8 +477,8 @@
             "auth": false, 
             "server": "a.ssx.host", 
             "server_port": 1024, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_15", 
-            "password": "00602430", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_51", 
+            "password": "43566084", 
             "method": "aes-256-cfb"
         }, 
         {
@@ -162,8 +486,8 @@
             "auth": false, 
             "server": "b.ssx.host", 
             "server_port": 10008, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_16", 
-            "password": "12444603", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_52", 
+            "password": "39645982", 
             "method": "aes-256-cfb"
         }, 
         {
@@ -171,8 +495,8 @@
             "auth": false, 
             "server": "c.ssx.host", 
             "server_port": 10008, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_17", 
-            "password": "25688705", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_53", 
+            "password": "59323038", 
             "method": "aes-256-cfb"
         }, 
         {
@@ -180,7 +504,7 @@
             "auth": false, 
             "server": "ss1.ubox.co", 
             "server_port": 8388, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_18", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_54", 
             "password": "password", 
             "method": "aes-256-cfb"
         }, 
@@ -189,7 +513,7 @@
             "auth": false, 
             "server": "ss6.ubox.co", 
             "server_port": 8388, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_19", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_55", 
             "password": "password", 
             "method": "aes-256-cfb"
         }, 
@@ -198,7 +522,7 @@
             "auth": false, 
             "server": "ss2.ubox.co", 
             "server_port": 8388, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_20", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_56", 
             "password": "password", 
             "method": "aes-256-cfb"
         }, 
@@ -207,7 +531,7 @@
             "auth": false, 
             "server": "104.160.172.126", 
             "server_port": 8388, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_21", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_57", 
             "password": "ttt", 
             "method": "aes-256-cfb"
         }, 
@@ -216,7 +540,7 @@
             "auth": false, 
             "server": "69.12.73.132", 
             "server_port": 8388, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_22", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_58", 
             "password": "789", 
             "method": "aes-256-cfb"
         }, 
@@ -225,7 +549,7 @@
             "auth": false, 
             "server": "64.137.255.63", 
             "server_port": 8388, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_23", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_59", 
             "password": "eek", 
             "method": "aes-256-cfb"
         }, 
@@ -234,7 +558,7 @@
             "auth": false, 
             "server": "64.137.217.55", 
             "server_port": 8388, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_24", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_60", 
             "password": "kkk", 
             "method": "aes-256-cfb"
         }, 
@@ -243,7 +567,7 @@
             "auth": false, 
             "server": "64.137.204.231", 
             "server_port": 8388, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_25", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_61", 
             "password": "wtf", 
             "method": "aes-256-cfb"
         }, 
@@ -252,7 +576,7 @@
             "auth": false, 
             "server": "104.233.64.114", 
             "server_port": 8388, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_26", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_62", 
             "password": "vvv", 
             "method": "aes-256-cfb"
         }, 
@@ -261,8 +585,8 @@
             "auth": false, 
             "server": "188.166.186.129", 
             "server_port": 443, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_27", 
-            "password": "78696783", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_63", 
+            "password": "18949752", 
             "method": "aes-256-cfb"
         }, 
         {
@@ -270,7 +594,7 @@
             "auth": false, 
             "server": "mgm3.sspw.pw", 
             "server_port": 443, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_28", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_64", 
             "password": "123456", 
             "method": "aes-256-cfb"
         }, 
@@ -279,7 +603,7 @@
             "auth": false, 
             "server": "mgm4.sspw.pw", 
             "server_port": 443, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_29", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_65", 
             "password": "123456", 
             "method": "aes-256-cfb"
         }, 
@@ -288,7 +612,7 @@
             "auth": false, 
             "server": "mgm5.sspw.pw", 
             "server_port": 443, 
-            "remarks": "\u65e0\u89c6\u7248\u6743_30", 
+            "remarks": "\u65e0\u89c6\u7248\u6743_66", 
             "password": "123456", 
             "method": "aes-256-cfb"
         }

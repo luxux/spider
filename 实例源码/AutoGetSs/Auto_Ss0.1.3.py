@@ -3,7 +3,7 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   koosuf
-# @Last Modified time: 2017-03-16 23:43:11
+# @Last Modified time: 2017-03-17 11:28:59
 
 import re
 import os
@@ -321,7 +321,7 @@ def main():
     Ssconfig['configs'] = configs
     save_config(filename, Ssconfig)
 
-    # print(u'此次更新了------------' + str(len(configs)) + u'-------------条数据')
+    print(u'此次更新了------------' + str(len(configs)) + u'-------------条数据')
     os.system('pause')
 
 if __name__ == '__main__':
