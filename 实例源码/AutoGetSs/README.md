@@ -9,7 +9,7 @@
     - [x] [doub.io](https://doub.io/sszhfx/)
     - [x] [frss.ml](http://frss.ml/)
     - [x] [vpsml](http://ss.vpsml.site/)
-    - [x] [isx.yt](http://isx.yt/)
+    - [x] [vbox](https://www.vbox.co/)
     - [x] [shadowsocks8](http://free.shadowsocks8.cc/)
     - [x] [ishadow](https://ishadow.info/)
     - [x] [mianfei](http://www.shadowsocks.asia/mianfei/10.html)
