@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
-# @Last Modified by:   koosuf
-# @Last Modified time: 2017-03-16 20:22:05
+# @Last Modified by:   KOOSUF\koosuf
+# @Last Modified time: 2017-03-19 03:34:08
 
 import re
 import os
@@ -208,7 +208,31 @@ def get_ss_yhyhd(r):
     load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
 
 
-def get_ss_shadowsocks8():
+def get_ss_sspw(r):
+    # http://www.shadowsocks.asia/mianfei/10.html
+    Ss_users = []
+    Ss_passwds = []
+    Ss_ports = []
+    Ss_Encs = []
+    html_doc = encode_deal(r.content)
+    p = re.compile('\s+')
+    html_doc = re.sub(p, '', html_doc)
+    # 服务器地址
+    re_str = re.findall(
+        '">服务器(.*?)服务器端口(\d+)密码(.*?)代理端口(\d+)加密方式(.*?)临时账号', html_doc, re.S)
+    for r in re_str:
+        Ss_users.append(r[0][-12:])
+        # # 端口
+        Ss_ports.append(r[1])
+        # # 密码
+        Ss_passwds.append(r[2])
+        # # 加密方式
+        Ss_Encs.append(r[4])
+
+    load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
+
+
+def get_ss_shadowsocks8(r):
     shadowsocks8_list = [
         'http://free.shadowsocks8.cc/images/server01.png',
         'http://free.shadowsocks8.cc/images/server02.png',
@@ -231,6 +255,32 @@ def get_ss_shadowsocks8():
     load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
 
 
+def get_ss_sishadow(r):
+    # https://ishadow.info/
+    Ss_users = []
+    Ss_passwds = []
+    Ss_ports = []
+    Ss_Encs = []
+    html_doc = encode_deal(r.content)
+    all_ = re.findall(
+        '<div class="hover-text">(.*?)<h4><a href', html_doc, re.S)
+    for div in all_:
+        # 服务器地址
+        Ss_up = re.findall(
+            '">(.*?)</span>', div, re.S)
+        # # 端口
+        Ss_port = re.findall(
+            '<h4>Port：(.*?)</h4>', div, re.S)
+        # 加密方式
+        Ss_Enc = re.findall(
+            '<h4>Method:(.*?)</h4>', div, re.S)
+        Ss_users.append(Ss_up[0])
+        Ss_passwds.append(Ss_up[2])
+        Ss_ports.append(Ss_port[0])
+        Ss_Encs.append(Ss_Enc[0])
+    load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
+
+
 def start_get_ss():
     urls_dict = {
         'https://xsjs.yhyhd.org/free-ss/': get_ss_yhyhd,
@@ -238,14 +288,17 @@ def start_get_ss():
         'http://frss.ml/': get_ss_frss,
         'https://www.vbox.co/': get_ss_vbox,
         'http://ishadow.info/': get_ss_ishadow,
-        'http://ss.vpsml.site/': get_ss_vpsml
+        'http://ss.vpsml.site/': get_ss_vpsml,
+        'http://free.shadowsocks8.cc/': get_ss_shadowsocks8,
+        'http://www.shadowsocks.asia/mianfei/10.html': get_ss_sspw,
+        'https://ishadow.info/': get_ss_sishadow
     }
     headers = {
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'}
     pool = ThreadPoolExecutor(len(urls_dict.keys()) + 1)
-    rs = (grequests.get(u, timeout=8, proxies=proxies, headers=headers)
+    rs = (grequests.get(u, timeout=10, proxies=proxies, headers=headers)
           for u in urls_dict.keys())
-    for r in grequests.imap(rs, size=5):  #
+    for r in grequests.imap(rs, size=2):  #
         try:
             print("{:-^72}".format(r.url))
             func = urls_dict.get(r.url, u"没有匹配项！！！")
@@ -254,22 +307,20 @@ def start_get_ss():
         except Exception as e:
             print(u"错误提示:" + str(e))
             continue
-    # pool.submit(get_ss_shadowsocks8())
 
 
 def main():
+    Tstart = time.time()
     print("{:#^72}".format(
         ' {} Shadowsocks Update '.format(time.strftime('%Y-%m-%d %H:%M:%S'))
     ))
-    Tstart = time.time()
     start_get_ss()
-    print(time.time() - Tstart)
     filename = 'gui-config.json'
     Ssconfig = load_config(filename)
     Ssconfig['configs'] = configs
     save_config(filename, Ssconfig)
-
-    print(u'此次更新了------------' + str(len(configs)) + u'-------------条数据')
+    print(u'此次更新了------------' + str(len(configs)) +
+          u'-------------条数据,时间%f' % (time.time() - Tstart))
     os.system('pause')
 
 if __name__ == '__main__':

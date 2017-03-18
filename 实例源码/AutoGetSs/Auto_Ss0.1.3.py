@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
-# @Last Modified by:   koosuf
-# @Last Modified time: 2017-03-17 11:28:59
+# @Last Modified by:   KOOSUF\koosuf
+# @Last Modified time: 2017-03-19 03:19:55
 
 import re
 import os
@@ -298,6 +298,37 @@ def get_ss_sspw(Src_url_sspw):
     load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
 
 
+def get_ss_sishadow(Src_url_sishadow):
+    # https://ishadow.info/
+    Ss_users = []
+    Ss_passwds = []
+    Ss_ports = []
+    Ss_Encs = []
+    html_doc = requests_htmls(Src_url_sishadow)
+    if html_doc is None:
+        print(u'解析失败:' + Src_url_sishadow)
+        return -1
+    # print(html_doc)
+
+    all_ = re.findall(
+        '<div class="hover-text">(.*?)<h4><a href', html_doc, re.S)
+    for div in all_:
+        # 服务器地址
+        Ss_up = re.findall(
+            '">(.*?)</span>', div, re.S)
+        # # 端口
+        Ss_port = re.findall(
+            '<h4>Port：(.*?)</h4>', div, re.S)
+        # 加密方式
+        Ss_Enc = re.findall(
+            '<h4>Method:(.*?)</h4>', div, re.S)
+        Ss_users.append(Ss_up[0])
+        Ss_passwds.append(Ss_up[2])
+        Ss_ports.append(Ss_port[0])
+        Ss_Encs.append(Ss_Enc[0])
+    load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
+
+
 def start_get_ss():
     Tstart = time.time()
     get_ss_yhyhd(Src_url_yhyhd='https://xsjs.yhyhd.org/free-ss/')
@@ -308,6 +339,7 @@ def start_get_ss():
     get_ss_frss(Src_url_frss='http://frss.ml/')
     get_ss_shadowsocks8(Src_url_ss8='http://free.shadowsocks8.cc/')
     get_ss_sspw(Src_url_sspw='http://www.shadowsocks.asia/mianfei/10.html')
+    get_ss_sishadow(Src_url_sishadow='https://ishadow.info/')
     print(time.time() - Tstart)
 
 
