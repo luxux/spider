@@ -5,7 +5,16 @@
 
 ### 需求
 
-- [x] 获取网站[doub.io](https://doub.io/sszhfx/),[frss.ml](http://frss.ml/),[vpsml](http://ss.vpsml.site/),[isx](http://isx.yt/),[shadowsocks8](http://free.shadowsocks8.cc/)
+- [x] 获取网站(~~好的网站，求推存~~)
+    - [x] [doub.io](https://doub.io/sszhfx/)
+    - [x] [frss.ml](http://frss.ml/)
+    - [x] [vpsml](http://ss.vpsml.site/)
+    - [x] [isx.yt](http://isx.yt/)
+    - [x] [shadowsocks8](http://free.shadowsocks8.cc/)
+    - [x] [ishadow](https://ishadow.info/)
+    - [x] [mianfei](http://www.shadowsocks.asia/mianfei/10.html)
+    - [x] [sishadow](http://ishadow.info/)
+    - [x] [yhyhd](https://xsjs.yhyhd.org/free-ss/)
 - [ ] 调试日志
 - [x] 不和原有配置发生冲突
 - [x] 多系统支持
