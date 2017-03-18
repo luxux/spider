@@ -242,7 +242,6 @@ def start_get_ss():
     }
     headers = {
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'}
-    Tstart = time.time()
     pool = ThreadPoolExecutor(len(urls_dict.keys()) + 1)
     rs = (grequests.get(u, timeout=8, proxies=proxies, headers=headers)
           for u in urls_dict.keys())
@@ -256,14 +255,15 @@ def start_get_ss():
             print(u"错误提示:" + str(e))
             continue
     # pool.submit(get_ss_shadowsocks8())
-    print(time.time() - Tstart)
 
 
 def main():
     print("{:#^72}".format(
         ' {} Shadowsocks Update '.format(time.strftime('%Y-%m-%d %H:%M:%S'))
     ))
+    Tstart = time.time()
     start_get_ss()
+    print(time.time() - Tstart)
     filename = 'gui-config.json'
     Ssconfig = load_config(filename)
     Ssconfig['configs'] = configs

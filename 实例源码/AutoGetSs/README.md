@@ -8,13 +8,13 @@
 - [x] 获取网站[doub.io](https://doub.io/sszhfx/),[frss.ml](http://frss.ml/),[vpsml](http://ss.vpsml.site/),[isx](http://isx.yt/),[shadowsocks8](http://free.shadowsocks8.cc/)
 - [ ] 调试日志
 - [x] 不和原有配置发生冲突
-- [ ] 多系统支持
+- [x] 多系统支持
 - [ ] 自动运行
 
 ### 效果
-![](./getSs_img.jpg)
+![](./img/getSs_img.jpg)
 
-![](./Ss_img.jpg)
+![](./img/Ss_img.jpg)
 
 ### install
 [ShadowsocksR使用详解](https://doub.io/ss-jc10/)
@@ -49,4 +49,4 @@
 
 3. ShadowsocksR更新加载gui-config.json文件
 
-###注意: 在加载的过程中有什么任何错误提示，都可以打开ShadowsocksR全局代理。管理员运行Auto_Ss0.1.2.exe **多次**
+###注意: 在加载的过程中有什么任何错误提示，都可以打开ShadowsocksR全局代理。管理员运行Auto_Ss0.1.3.exe **多次**
