@@ -15,7 +15,7 @@
     - [x] [mianfei](http://www.shadowsocks.asia/mianfei/10.html)
     - [x] [sishadow](http://ishadow.info/)
     - [x] [yhyhd](https://xsjs.yhyhd.org/free-ss/)
-    - [ ] [new-pac](https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7) 
+    - [x] [new-pac](https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7) 
 - [ ] 调试日志
 - [x] 不和原有配置发生冲突
 - [x] 多系统支持

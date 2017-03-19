@@ -3,7 +3,7 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   KOOSUF\koosuf
-# @Last Modified time: 2017-03-19 03:34:08
+# @Last Modified time: 2017-03-19 13:29:32
 
 import re
 import os
@@ -66,8 +66,8 @@ def load_Sslist(Ss_user, Ss_passwd, Ss_port, Ss_Enc=['aes-256-cfb']):
         if Ss_user[i] is None:
             continue
         try:
-            config['remarks'] = u"无视版权_".encode(
-                'utf-8') + str(len(configs) + 1)
+            config['remarks'] = u"updata_" + \
+                time.strftime("%Y.%m.%d %H:%M:%S", time.localtime())
             config['server'] = Ss_user[i]
             config['server_port'] = int(Ss_port[i])
             config['password'] = Ss_passwd[i]
@@ -281,6 +281,32 @@ def get_ss_sishadow(r):
     load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
 
 
+def get_ss_Alvin9999(r):
+    # "https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7"
+    Ss_users = []
+    Ss_passwds = []
+    Ss_ports = []
+    Ss_Encs = []
+    comp = re.compile(
+        "<p>服务器\d*.*?([\w\.]+)\s*端口.*?(\d*)\s*密码.*?([\w\.-]*)\s*加密方式.*?([\w-]*)</p>")  #
+    comp_encs = re.compile("加密方式：([\w-]*)\s*")
+
+    html_doc = encode_deal(r.content)
+    html_doc = re.findall("<p>服务器.*</p>", html_doc)
+    for i in html_doc:
+        res = re.match(comp, i)
+        if res.group(4) == '':
+            ree = re.findall(comp_encs, i)
+            Ss_Encs.append(ree)
+
+        else:
+            Ss_Encs.append(res.group(4))
+        Ss_users.append(res.group(1))
+        Ss_passwds.append(res.group(3))
+        Ss_ports.append(res.group(2))
+    load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
+
+
 def start_get_ss():
     urls_dict = {
         'https://xsjs.yhyhd.org/free-ss/': get_ss_yhyhd,
@@ -291,7 +317,8 @@ def start_get_ss():
         'http://ss.vpsml.site/': get_ss_vpsml,
         'http://free.shadowsocks8.cc/': get_ss_shadowsocks8,
         'http://www.shadowsocks.asia/mianfei/10.html': get_ss_sspw,
-        'https://ishadow.info/': get_ss_sishadow
+        'https://ishadow.info/': get_ss_sishadow,
+        r'https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7': get_ss_Alvin9999
     }
     headers = {
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'}

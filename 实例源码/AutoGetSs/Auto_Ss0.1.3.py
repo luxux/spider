@@ -3,7 +3,7 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   KOOSUF\koosuf
-# @Last Modified time: 2017-03-19 03:19:55
+# @Last Modified time: 2017-03-19 13:21:52
 
 import re
 import os
@@ -329,6 +329,35 @@ def get_ss_sishadow(Src_url_sishadow):
     load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
 
 
+def get_ss_Alvin9999(Src_url_Alvin9999):
+    # "https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7"
+    Ss_users = []
+    Ss_passwds = []
+    Ss_ports = []
+    Ss_Encs = []
+    comp = re.compile(
+        "<p>服务器\d*.*?([\w\.]+)\s*端口.*?(\d*)\s*密码.*?([\w\.-]*)\s*加密方式.*?([\w-]*)</p>")  #
+    comp_encs = re.compile("加密方式：([\w-]*)\s*")
+
+    html_doc = requests_htmls(Src_url_Alvin9999)
+    if html_doc is None:
+        print(u'解析失败:' + Src_url_Alvin9999)
+        return -1
+    html_doc = re.findall("<p>服务器.*</p>", html_doc)
+    for i in html_doc:
+        res = re.match(comp, i)
+        if res.group(4) == '':
+            ree = re.findall(comp_encs, i)
+            Ss_Encs.append(ree)
+
+        else:
+            Ss_Encs.append(res.group(4))
+        Ss_users.append(res.group(1))
+        Ss_passwds.append(res.group(3))
+        Ss_ports.append(res.group(2))
+    load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
+
+
 def start_get_ss():
     Tstart = time.time()
     get_ss_yhyhd(Src_url_yhyhd='https://xsjs.yhyhd.org/free-ss/')
@@ -340,6 +369,8 @@ def start_get_ss():
     get_ss_shadowsocks8(Src_url_ss8='http://free.shadowsocks8.cc/')
     get_ss_sspw(Src_url_sspw='http://www.shadowsocks.asia/mianfei/10.html')
     get_ss_sishadow(Src_url_sishadow='https://ishadow.info/')
+    get_ss_Alvin9999(
+        Src_url_Alvin9999=r'https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7')
     print(time.time() - Tstart)
 
 
