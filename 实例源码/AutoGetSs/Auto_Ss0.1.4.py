@@ -3,7 +3,7 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   KOOSUF\koosuf
-# @Last Modified time: 2017-03-19 22:55:27
+# @Last Modified time: 2017-03-20 14:28:35
 
 import re
 import os
@@ -306,13 +306,17 @@ def get_ss_Alvin9999(r):
         res = re.match(comp, i)
         if res.group(4) == '':
             ree = re.findall(comp_encs, i)
-            Ss_Encs.append(ree)
-
+            if len(ree) != 0:
+                Ss_Encs.append(ree[0])
+                Ss_users.append(res.group(1))
+                Ss_passwds.append(res.group(3))
+                Ss_ports.append(res.group(2))
         else:
             Ss_Encs.append(res.group(4))
-        Ss_users.append(res.group(1))
-        Ss_passwds.append(res.group(3))
-        Ss_ports.append(res.group(2))
+            Ss_users.append(res.group(1))
+            Ss_passwds.append(res.group(3))
+            Ss_ports.append(res.group(2))
+
     load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
 
 
@@ -334,7 +338,7 @@ def start_get_ss():
     pool = ThreadPoolExecutor(len(urls_dict.keys()) + 1)
     rs = (grequests.get(u, timeout=10, proxies=proxies, headers=headers)
           for u in urls_dict.keys())
-    for r in grequests.imap(rs, size=2):  #
+    for r in grequests.imap(rs, size=3):
         try:
             print("{:-^72}".format(r.url))
             func = urls_dict.get(r.url, u"没有匹配项！！！")

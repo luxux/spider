@@ -3,13 +3,14 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   KOOSUF\koosuf
-# @Last Modified time: 2017-03-19 13:21:52
+# @Last Modified time: 2017-03-20 14:29:26
 
 import re
 import os
 import sys
 import time
 import json
+import pyping
 import base64
 import chardet
 import requests
@@ -96,6 +97,10 @@ def load_Sslist(Ss_user, Ss_passwd, Ss_port, Ss_Enc=['aes-256-cfb']):
             config['timeout'] = 5
             print('{:<20} {:<12}   {:<20} {}'.format(Ss_user[i],
                                                      int(Ss_port[i]), Ss_passwd[i], Ss_Enc[i]))
+            r = pyping.ping(Ss_user[i], timeout=800)
+            print(r.avg_rtt)
+            if r.avg_rtt > 500:
+                continue
             configs.append(config)
         except ValueError:
             continue
@@ -348,13 +353,16 @@ def get_ss_Alvin9999(Src_url_Alvin9999):
         res = re.match(comp, i)
         if res.group(4) == '':
             ree = re.findall(comp_encs, i)
-            Ss_Encs.append(ree)
-
+            if len(ree) != 0:
+                Ss_Encs.append(ree[0])
+                Ss_users.append(res.group(1))
+                Ss_passwds.append(res.group(3))
+                Ss_ports.append(res.group(2))
         else:
             Ss_Encs.append(res.group(4))
-        Ss_users.append(res.group(1))
-        Ss_passwds.append(res.group(3))
-        Ss_ports.append(res.group(2))
+            Ss_users.append(res.group(1))
+            Ss_passwds.append(res.group(3))
+            Ss_ports.append(res.group(2))
     load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
 
 
