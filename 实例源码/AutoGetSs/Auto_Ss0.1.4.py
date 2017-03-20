@@ -3,7 +3,7 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   KOOSUF\koosuf
-# @Last Modified time: 2017-03-19 13:29:32
+# @Last Modified time: 2017-03-19 22:55:27
 
 import re
 import os
@@ -18,12 +18,15 @@ from lxml import etree
 from concurrent.futures import ThreadPoolExecutor
 
 configs = []
+# d代理处理
 proxies = {
     "http": "http://127.0.0.1:1080",
+    "http":  "http://106.46.136.125:808",
 }
 
 
 def decode_qr(qr_img_url):
+    # 二维码解码
     url = 'http://cli.im/Api/Browser/deqr'
     Headres = {
         "Accept": "*/*",
@@ -36,10 +39,16 @@ def decode_qr(qr_img_url):
     Params = {
         'data': qr_img_url
     }
-    req = requests.post(url, params=Params)
-    str_qr = req.json()
-    qr = str_qr['data']['RawData'].encode('utf-8')
-    data_qr = base64.b64decode(qr[5:])
+    try:
+        req = requests.post(url, params=Params)
+        str_qr = req.json()
+        qr = str_qr['data']['RawData'].encode('utf-8')
+        data_qr = base64.b64decode(qr[5:])
+    except Exception as e:
+        req = requests.post(url, params=Params)
+        str_qr = req.json()
+        qr = str_qr['data']['RawData'].encode('utf-8')
+        data_qr = base64.b64decode(qr[5:])
     return data_qr
 
 
@@ -349,6 +358,12 @@ def main():
     print(u'此次更新了------------' + str(len(configs)) +
           u'-------------条数据,时间%f' % (time.time() - Tstart))
     os.system('pause')
+
+
+def restart_program():
+    # 程序重启
+    python = sys.executable
+    os.execl(python, python, * sys.argv)
 
 if __name__ == '__main__':
     main()
