@@ -15,7 +15,7 @@
     - [x] [mianfei](http://www.shadowsocks.asia/mianfei/10.html)
     - [x] [sishadow](http://ishadow.info/)
     - [x] [yhyhd](https://xsjs.yhyhd.org/free-ss/)
-    - [x] [new-pac](https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7) 
+    - [x] [new-pac](https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
 - [ ] 调试日志
 - [x] 不和原有配置发生冲突
 - [x] 多系统支持
@@ -59,6 +59,6 @@
 
 3. ShadowsocksR更新加载gui-config.json文件
 
-4. 下载[Releases](https://github.com/luxux/spider/releases)
+4. 下载地址[Releases](https://github.com/luxux/spider/releases)
 
 ### 注意: 在加载的过程中有什么任何错误提示，都可以打开ShadowsocksR全局代理。管理员运行Auto_Ss0.x.x.exe **多次**

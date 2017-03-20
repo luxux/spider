@@ -3,13 +3,13 @@
 
 ## 实例源码介绍、
 
-#### AutoGetSs  
+#### AutoGetSs
 
-主要抓取分享**免费Ss账号**网站，给平时使用SSR提供账号来源！可执行文件[Releases](https://github.com/luxux/spider/releases)
+抓取分享**免费Ss账号**网站，给平时使用SSR提供账号来源！可执行文件[Releases](https://github.com/luxux/spider/releases)
 
 #### AutoHosts
 
-主要获取分享的hosts,替换本地的hosts
+获取分享的hosts,替换本地的hosts
 
 #### hydroinfo
 实现抓取全国水雨情况
