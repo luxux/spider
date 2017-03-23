@@ -2,15 +2,14 @@
 # -*- coding: utf-8 -*-
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
-# @Last Modified by:   KOOSUF\koosuf
-# @Last Modified time: 2017-03-20 14:29:26
+# @Last Modified by:   koosuf
+# @Last Modified time: 2017-03-23 17:05:16
 
 import re
 import os
 import sys
 import time
 import json
-import pyping
 import base64
 import chardet
 import requests
@@ -97,10 +96,6 @@ def load_Sslist(Ss_user, Ss_passwd, Ss_port, Ss_Enc=['aes-256-cfb']):
             config['timeout'] = 5
             print('{:<20} {:<12}   {:<20} {}'.format(Ss_user[i],
                                                      int(Ss_port[i]), Ss_passwd[i], Ss_Enc[i]))
-            r = pyping.ping(Ss_user[i], timeout=800)
-            print(r.avg_rtt)
-            if r.avg_rtt > 500:
-                continue
             configs.append(config)
         except ValueError:
             continue
@@ -371,7 +366,7 @@ def start_get_ss():
     get_ss_yhyhd(Src_url_yhyhd='https://xsjs.yhyhd.org/free-ss/')
     get_ss_doubi(Src_url_doubi='https://doub.io/sszhfx/')
     get_ss_vpsml(Src_url_vpsml='http://ss.vpsml.site/')
-    get_ss_ishadow(Src_url_ishadow='http://isx.yt/')
+    get_ss_ishadow(Src_url_ishadow='http://ishadow.info/')
     get_ss_vbox(Src_url_vbox='https://www.vbox.co/')
     get_ss_frss(Src_url_frss='http://frss.ml/')
     get_ss_shadowsocks8(Src_url_ss8='http://free.shadowsocks8.cc/')
