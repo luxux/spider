@@ -2,18 +2,18 @@
 # -*- coding: utf-8 -*-
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
-# @Last Modified by:   koosuf
-# @Last Modified time: 2017-03-23 17:05:16
+# @Last Modified by:   KOOSUF\koosuf
+# @Last Modified time: 2017-03-30 17:28:47
 
 import re
 import os
 import sys
 import time
 import json
+# import zbar
 import base64
 import chardet
 import requests
-from lxml import etree
 
 configs = []
 proxies = {
@@ -213,17 +213,19 @@ def get_ss_doubi(Src_url_doubi):
     if html_doc is None:
         print(u'解析失败:' + Src_url_doubi)
         return -1
-    doubi_string = re.findall(
-        "<tbody[^>]*>[\s\S]*?<\/tbody>", html_doc)[0]
-    page = etree.HTML(doubi_string)
-
-    tr_list = page.xpath('//tr')
-    for tr in tr_list[1:]:
-        Ss_users.append(tr[1].text)
-        Ss_passwds.append(tr[3].text)
-        Ss_ports.append(tr[2].text)
-        Ss_Encs.append(tr[4].text)
-
+    doubi_str = re.findall(
+        "<td><a (.*?)二维码</a></td>", html_doc, re.S)
+    for bi_str in doubi_str:
+        doubi = re.findall(
+            "ss://(.*?)\" target", bi_str, re.S)
+        if len(doubi) == 0:
+            continue
+        qrstr = base64.b64decode(doubi[0].encode('utf-8'))
+        arr = qrstr.split(':')
+        Ss_Encs.append(arr[0])
+        Ss_passwds.append(arr[1].split('@')[0])
+        Ss_users.append(arr[1].split('@')[1])
+        Ss_ports.append(arr[2])
     load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
 
 

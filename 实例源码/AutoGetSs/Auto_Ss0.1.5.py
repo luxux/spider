@@ -3,7 +3,7 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   KOOSUF\koosuf
-# @Last Modified time: 2017-03-20 14:28:35
+# @Last Modified time: 2017-03-30 18:07:35
 
 import re
 import os
@@ -14,14 +14,12 @@ import base64
 import chardet
 import requests
 import grequests
-from lxml import etree
 from concurrent.futures import ThreadPoolExecutor
 
 configs = []
 # d代理处理
 proxies = {
     "http": "http://127.0.0.1:1080",
-    "http":  "http://106.46.136.125:808",
 }
 
 
@@ -186,16 +184,20 @@ def get_ss_doubi(r):
     Ss_ports = []
     Ss_Encs = []
     html_doc = encode_deal(r.content)
-    doubi_string = re.findall(
-        "<tbody[^>]*>[\s\S]*?<\/tbody>", html_doc)[0]
-    page = etree.HTML(doubi_string)
 
-    tr_list = page.xpath('//tr')
-    for tr in tr_list[1:]:
-        Ss_users.append(tr[1].text)
-        Ss_passwds.append(tr[3].text)
-        Ss_ports.append(tr[2].text)
-        Ss_Encs.append(tr[4].text)
+    doubi_str = re.findall(
+        "<td><a (.*?)二维码</a></td>", html_doc, re.S)
+    for bi_str in doubi_str:
+        doubi = re.findall(
+            "ss://(.*?)\" target", bi_str, re.S)
+        if len(doubi) == 0:
+            continue
+        qrstr = base64.b64decode(doubi[0].encode('utf-8'))
+        arr = qrstr.split(':')
+        Ss_Encs.append(arr[0])
+        Ss_passwds.append(arr[1].split('@')[0])
+        Ss_users.append(arr[1].split('@')[1])
+        Ss_ports.append(arr[2])
 
     load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
 
@@ -336,7 +338,7 @@ def start_get_ss():
     headers = {
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'}
     pool = ThreadPoolExecutor(len(urls_dict.keys()) + 1)
-    rs = (grequests.get(u, timeout=10, proxies=proxies, headers=headers)
+    rs = (grequests.get(u, timeout=40, proxies=proxies, headers=headers)
           for u in urls_dict.keys())
     for r in grequests.imap(rs, size=3):
         try:
