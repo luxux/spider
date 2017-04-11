@@ -3,17 +3,22 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   KOOSUF\koosuf
-# @Last Modified time: 2017-03-30 17:28:47
+# @Last Modified time: 2017-04-10 09:39:05
 
 import re
 import os
 import sys
 import time
 import json
-# import zbar
+import zbar
 import base64
 import chardet
 import requests
+import cStringIO
+from PIL import Image
+# 警告忽略
+import warnings
+warnings.filterwarnings("ignore")
 
 configs = []
 proxies = {
@@ -37,6 +42,21 @@ def decode_qr(qr_img_url):
     req = requests.post(url, params=Params)
     str_qr = req.json()
     qr = str_qr['data']['RawData'].encode('utf-8')
+    data_qr = base64.b64decode(qr[5:])
+    return data_qr
+
+
+def decode_zbar(qr_img):
+    width, height = qr_img.size
+
+    scanner = zbar.ImageScanner()
+    scanner.parse_config('enable')
+    qrCode = zbar.Image(width, height, 'Y800', qr_img.tobytes())
+    scanner.scan(qrCode)
+    qr = ""
+    for symbol in qrCode:
+        qr = symbol.data
+    del(qrCode)
     data_qr = base64.b64decode(qr[5:])
     return data_qr
 
@@ -261,7 +281,11 @@ def get_ss_shadowsocks8(Src_url_ss8):
     Ss_Encs = []
     for x in shadowsocks8_list:
         try:
-            qrstr = decode_qr(x)
+            # qrstr = decode_qr(x)  #这是接口解码，超级慢
+            req = requests.get(shadowsocks8_list[1])
+            fimg = cStringIO.StringIO(req.content)
+            img = Image.open(fimg).convert('L')
+            qrstr = decode_zbar(img)
             arr = qrstr.split(':')
             Ss_Encs.append(arr[0])
             Ss_passwds.append(arr[1].split('@')[0])
@@ -371,7 +395,7 @@ def start_get_ss():
     get_ss_ishadow(Src_url_ishadow='http://ishadow.info/')
     get_ss_vbox(Src_url_vbox='https://www.vbox.co/')
     get_ss_frss(Src_url_frss='http://frss.ml/')
-    get_ss_shadowsocks8(Src_url_ss8='http://free.shadowsocks8.cc/')
+    get_ss_shadowsocks8(Src_url_ss8='http://ss.shadowsocks8.cc/')
     get_ss_sspw(Src_url_sspw='http://www.shadowsocks.asia/mianfei/10.html')
     get_ss_sishadow(Src_url_sishadow='https://ishadow.info/')
     get_ss_Alvin9999(

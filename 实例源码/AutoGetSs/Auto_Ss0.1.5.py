@@ -3,18 +3,24 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   KOOSUF\koosuf
-# @Last Modified time: 2017-03-30 18:07:35
+# @Last Modified time: 2017-04-10 09:37:43
 
 import re
 import os
 import sys
+import zbar
 import time
 import json
 import base64
 import chardet
 import requests
 import grequests
+import cStringIO
+from PIL import Image
 from concurrent.futures import ThreadPoolExecutor
+# 警告忽略
+import warnings
+warnings.filterwarnings("ignore")
 
 configs = []
 # d代理处理
@@ -47,6 +53,21 @@ def decode_qr(qr_img_url):
         str_qr = req.json()
         qr = str_qr['data']['RawData'].encode('utf-8')
         data_qr = base64.b64decode(qr[5:])
+    return data_qr
+
+
+def decode_zbar(qr_img):
+    width, height = qr_img.size
+
+    scanner = zbar.ImageScanner()
+    scanner.parse_config('enable')
+    qrCode = zbar.Image(width, height, 'Y800', qr_img.tobytes())
+    scanner.scan(qrCode)
+    qr = ""
+    for symbol in qrCode:
+        qr = symbol.data
+    del(qrCode)
+    data_qr = base64.b64decode(qr[5:])
     return data_qr
 
 
@@ -245,9 +266,9 @@ def get_ss_sspw(r):
 
 def get_ss_shadowsocks8(r):
     shadowsocks8_list = [
-        'http://free.shadowsocks8.cc/images/server01.png',
-        'http://free.shadowsocks8.cc/images/server02.png',
-        'http://free.shadowsocks8.cc/images/server03.png'
+        r.url + 'images/server01.png',
+        r.url + 'images/server02.png',
+        r.url + 'images/server03.png'
     ]
     Ss_users = []
     Ss_passwds = []
@@ -255,7 +276,11 @@ def get_ss_shadowsocks8(r):
     Ss_Encs = []
     for x in shadowsocks8_list:
         try:
-            qrstr = decode_qr(x)
+            # qrstr = decode_qr(x)  #这是接口解码，超级慢
+            req = requests.get(x)
+            fimg = cStringIO.StringIO(req.content)
+            img = Image.open(fimg).convert('L')
+            qrstr = decode_zbar(img)
             arr = qrstr.split(':')
             Ss_Encs.append(arr[0])
             Ss_passwds.append(arr[1].split('@')[0])
@@ -330,7 +355,7 @@ def start_get_ss():
         'https://www.vbox.co/': get_ss_vbox,
         'http://ishadow.info/': get_ss_ishadow,
         'http://ss.vpsml.site/': get_ss_vpsml,
-        'http://free.shadowsocks8.cc/': get_ss_shadowsocks8,
+        'http://ss.shadowsocks8.cc/': get_ss_shadowsocks8,
         'http://www.shadowsocks.asia/mianfei/10.html': get_ss_sspw,
         'https://ishadow.info/': get_ss_sishadow,
         r'https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7': get_ss_Alvin9999
@@ -338,9 +363,9 @@ def start_get_ss():
     headers = {
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'}
     pool = ThreadPoolExecutor(len(urls_dict.keys()) + 1)
-    rs = (grequests.get(u, timeout=40, proxies=proxies, headers=headers)
+    rs = (grequests.get(u, timeout=30, proxies=proxies, headers=headers)
           for u in urls_dict.keys())
-    for r in grequests.imap(rs, size=3):
+    for r in grequests.imap(rs, size=5):
         try:
             print("{:-^72}".format(r.url))
             func = urls_dict.get(r.url, u"没有匹配项！！！")
