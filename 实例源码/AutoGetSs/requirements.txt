@@ -1,0 +1,5 @@
+zbar>=0.10,<1.0
+chardet==3.0.2
+requestes>=0.0.1,<1.0.0
+grequests>=0.3.0,<1.0.0
+futures>=3.0.5,<4.0.0

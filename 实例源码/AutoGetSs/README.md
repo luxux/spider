@@ -33,13 +33,10 @@
 
 1. 你需要安装python2.7，[下载地址](https://www.python.org/)
 
-2. 需要安装chardet,lxml和requests模块，在管理员终端运行如下命令
+2. 需要安装chardet和requests等模块，在管理员终端运行如下命令
 
    ```cmd
-   py -2 -m pip install futures
-   py -2 -m pip install requests
-   py -2 -m pip install chardet
-   py -2 -m pip install lxml
+   py -2 -m pip install -r requirements.txt
    ```
 
 3. 将Auto_Ssx.x.x.py放在ShadowsocksR文件夹内
