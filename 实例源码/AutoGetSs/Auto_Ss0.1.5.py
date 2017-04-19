@@ -3,7 +3,7 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   KOOSUF\koosuf
-# @Last Modified time: 2017-04-10 09:37:43
+# @Last Modified time: 2017-04-20 00:30:38
 
 import re
 import os
@@ -85,7 +85,7 @@ def encode_deal(src_html):
     return html
 
 
-def load_Sslist(Ss_user, Ss_passwd, Ss_port, Ss_Enc=['aes-256-cfb']):
+def load_Sslist(Ss_user, Ss_passwd, Ss_port, Ss_Enc=['aes-256-cfb'], Protocol=[' '], Obfs=[' ']):
     num = min(len(Ss_user), len(Ss_passwd), len(Ss_port))
     for i in range(num):
         config = {}
@@ -102,6 +102,9 @@ def load_Sslist(Ss_user, Ss_passwd, Ss_port, Ss_Enc=['aes-256-cfb']):
             config['method'] = Ss_Enc[i]
             config['auth'] = False
             config['timeout'] = 5
+            if Protocol[0] != ' ':
+                config['protocol'] = Protocol[i]
+                config['obfs'] = Obfs[i]
             print('{:<20} {:<12}   {:<20} {}'.format(Ss_user[i],
                                                      int(Ss_port[i]), Ss_passwd[i], Ss_Enc[i]))
             configs.append(config)
@@ -179,48 +182,37 @@ def get_ss_vpsml(r):
     load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
 
 
-def get_ss_frss(r):
-    Ss_users = []
-    Ss_passwds = []
-    Ss_ports = []
-    Ss_Encs = []
-    html_doc = encode_deal(r.content)
-    Ss_r = html_doc.split('alert')
-    for uu in Ss_r[1:]:
-        uu = uu.replace('IP', '').replace('：', '').replace(
-            r'\n', '').replace('，', '')
-        uu = uu.decode('utf-8')
-        Ss_ = re.findall(
-            u'"(.*?)端口(.*?)密码(.*?)method(.*?)不定期改密码请先加入收藏夹"', uu, re.S)
-        Ss_users.append(Ss_[0][0])
-        Ss_passwds.append(Ss_[0][2])
-        Ss_ports.append(Ss_[0][1])
-        Ss_Encs.append(Ss_[0][3])
-    load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
-
-
 def get_ss_doubi(r):
     Ss_users = []
     Ss_passwds = []
     Ss_ports = []
-    Ss_Encs = []
+    Ss_encs = []
+    Ss_obfs = []
+    Ss_ptl = []
     html_doc = encode_deal(r.content)
-
-    doubi_str = re.findall(
-        "<td><a (.*?)二维码</a></td>", html_doc, re.S)
+    doubi_str = re.findall("<tr>(.*?)</tr>", html_doc, re.S)
     for bi_str in doubi_str:
         doubi = re.findall(
-            "ss://(.*?)\" target", bi_str, re.S)
+            "text=ssr?://(.*?)\" target", bi_str, re.S)
         if len(doubi) == 0:
             continue
         qrstr = base64.b64decode(doubi[0].encode('utf-8'))
         arr = qrstr.split(':')
-        Ss_Encs.append(arr[0])
-        Ss_passwds.append(arr[1].split('@')[0])
-        Ss_users.append(arr[1].split('@')[1])
-        Ss_ports.append(arr[2])
-
-    load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
+        if len(arr) > 3:
+            Ss_encs.append(arr[3])
+            Ss_passwds.append(base64.b64decode(arr[5].encode('utf-8')))
+            Ss_users.append(arr[0])
+            Ss_ports.append(arr[1])
+            Ss_ptl.append(arr[2])
+            Ss_obfs.append(arr[4])
+        else:
+            Ss_encs.append(arr[0])
+            Ss_passwds.append(arr[1].split('@')[0])
+            Ss_users.append(arr[1].split('@')[1])
+            Ss_ports.append(arr[2])
+            Ss_ptl.append(" ")
+            Ss_obfs.append(" ")
+    load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_encs, Ss_ptl, Ss_obfs)
 
 
 def get_ss_yhyhd(r):
@@ -351,7 +343,6 @@ def start_get_ss():
     urls_dict = {
         'https://xsjs.yhyhd.org/free-ss/': get_ss_yhyhd,
         'https://doub.io/sszhfx/':  get_ss_doubi,
-        'http://frss.ml/': get_ss_frss,
         'https://www.vbox.co/': get_ss_vbox,
         'http://ishadow.info/': get_ss_ishadow,
         'http://ss.vpsml.site/': get_ss_vpsml,
@@ -365,7 +356,7 @@ def start_get_ss():
     pool = ThreadPoolExecutor(len(urls_dict.keys()) + 1)
     rs = (grequests.get(u, timeout=30, proxies=proxies, headers=headers)
           for u in urls_dict.keys())
-    for r in grequests.imap(rs, size=5):
+    for r in grequests.imap(rs, size=3):
         try:
             print("{:-^72}".format(r.url))
             func = urls_dict.get(r.url, u"没有匹配项！！！")
