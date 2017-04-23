@@ -3,7 +3,7 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   KOOSUF\koosuf
-# @Last Modified time: 2017-04-20 00:30:38
+# @Last Modified time: 2017-04-23 19:48:57
 
 import re
 import os
@@ -268,7 +268,8 @@ def get_ss_shadowsocks8(r):
     Ss_Encs = []
     for x in shadowsocks8_list:
         try:
-            # qrstr = decode_qr(x)  #这是接口解码，超级慢
+            pass
+            # qrstr = decode_qr(x)  # 这是接口解码，超级慢
             req = requests.get(x)
             fimg = cStringIO.StringIO(req.content)
             img = Image.open(fimg).convert('L')
@@ -346,7 +347,7 @@ def start_get_ss():
         'https://www.vbox.co/': get_ss_vbox,
         'http://ishadow.info/': get_ss_ishadow,
         'http://ss.vpsml.site/': get_ss_vpsml,
-        'http://ss.shadowsocks8.cc/': get_ss_shadowsocks8,
+        'http://get.shadowsocks8.cc/': get_ss_shadowsocks8,
         'http://www.shadowsocks.asia/mianfei/10.html': get_ss_sspw,
         'https://ishadow.info/': get_ss_sishadow,
         r'https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7': get_ss_Alvin9999
