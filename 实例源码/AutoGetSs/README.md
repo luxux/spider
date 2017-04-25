@@ -7,7 +7,6 @@
 
 - [x] 获取网站(~~好的网站，求推存~~)
     - [x] [doub.io](https://doub.io/sszhfx/)
-    - [x] [frss.ml](http://frss.ml/)
     - [x] [vpsml](http://ss.vpsml.site/)
     - [x] [vbox](https://www.vbox.co/)
     - [x] [shadowsocks8](http://free.shadowsocks8.cc/)
