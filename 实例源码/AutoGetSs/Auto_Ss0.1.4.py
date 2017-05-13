@@ -63,7 +63,7 @@ def encode_deal(src_html):
         html = src_html
     else:
         html = src_html.decode(enc, 'ignore').encode('utf-8')
-    return html
+    return html.decode('utf-8')
 
 
 def load_Sslist(Ss_user, Ss_passwd, Ss_port, Ss_Enc=['aes-256-cfb']):
@@ -209,7 +209,7 @@ def get_ss_yhyhd(r):
     html_doc = encode_deal(r.content)
     Ss_br = re.findall(
         "<strong>(.*?)</strong>", html_doc, re.S)
-    for Ss_i in range(len(Ss_br) / 4):
+    for Ss_i in range(int(len(Ss_br) / 4)):
         Ss_users.append(Ss_br[0 + Ss_i * 4])
         Ss_passwds.append(Ss_br[3 + Ss_i * 4])
         Ss_ports.append(Ss_br[1 + Ss_i * 4])
