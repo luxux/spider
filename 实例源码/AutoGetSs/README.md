@@ -1,7 +1,9 @@
 # AutoGetSs
 ### 介绍
-谢谢luxux/spider
+谢谢luxux/spider。
+
 初学python。修改了下，可以支持Python3。
+
 以下是luxux/spider的Readme内容(改动Python2.7至Python3)。
 
 ************
