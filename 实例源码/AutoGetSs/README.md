@@ -1,7 +1,11 @@
 # AutoGetSs
 ### 介绍
+谢谢luxux/spider
+初学python。修改了下，可以支持Python3。
+以下是luxux/spider的Readme内容(改动Python2.7至Python3)。
 
-这个嘛！自然懒的原因，不想手动的粘贴复制。更重要的是~~没钱、没钱、没钱~~。:joy: :joy: :joy:
+************
+这个嘛！自然懒的原因，不想手动的粘贴复制。更重要的是~~没钱、没钱、没钱~~。​:joy:​ ​:joy:​ ​:joy:​
 
 ### 需求
 
