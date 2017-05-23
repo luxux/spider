@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
-# @Last Modified by:   koosuf
-# @Last Modified time: 2017-05-03 00:09:08
+# @Last Modified by:   KOOSUF\koosuf
+# @Last Modified time: 2017-05-24 00:59:59
 
 import re
 import os
@@ -206,11 +206,11 @@ def get_ss_doubi(r):
             qrstr = base64.b64decode(doubi[0].encode('utf-8'))
             arr = qrstr.split(':')
             if len(arr) > 3:
+                pwds = arr[5].split('/?remarks=')
+                pwds[0] += "=" * ((4 - len(pwds[0]) % 4) % 4)  # 缺省填充
+                passwd_str = base64.b64decode(pwds[0].encode('utf-8'))
                 Ss_encs.append(arr[3])
-                arr[5] += "=" * ((4 - len(arr[5]) % 4) % 4)  # 缺省填充
-                passwd_str = base64.b64decode(arr[5].encode('utf-8'))
-                pdw_str = passwd_str.split('\xfe')
-                Ss_passwds.append(pdw_str[0])
+                Ss_passwds.append(passwd_str)
                 Ss_users.append(arr[0])
                 Ss_ports.append(arr[1])
                 Ss_ptl.append(arr[2])

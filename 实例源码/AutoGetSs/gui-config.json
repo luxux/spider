@@ -3,81 +3,63 @@
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "104.160.181.92", 
-            "server_port": 923, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "dongtaiwang.com", 
-            "method": "CHACHA20"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "104.160.176.31", 
-            "server_port": 817, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "dongtaiwang.com", 
-            "method": "CHACHA20"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "104.160.173.67", 
-            "server_port": 923, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "dongtaiwang.com", 
-            "method": "CHACHA20"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "47.89.185.122", 
-            "server_port": 12345, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "ntdtv.com", 
-            "method": "CHACHA20"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "104.160.181.26", 
-            "server_port": 1212, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "dongtaiwang.com", 
-            "method": "CHACHA20"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "47.90.121.235", 
-            "server_port": 6666, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "server": "104.160.185.150", 
+            "server_port": 63528, 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "dongtaiwang.com", 
             "method": "aes-256-cfb"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "47.52.66.88", 
-            "server_port": 8388, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "server": "67.21.78.149", 
+            "server_port": 123, 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "dongtaiwang.com", 
             "method": "aes-256-cfb"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "123.203.222.74", 
-            "server_port": 16810, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "16810", 
+            "server": "123.203.223.133", 
+            "server_port": 17133, 
+            "remarks": "updata_2017.05.24 01:00:48", 
+            "password": "17133", 
             "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "123.203.223.133", 
+            "server_port": 13317, 
+            "remarks": "updata_2017.05.24 01:00:48", 
+            "password": "13317", 
+            "method": "chacha20-ietf"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "104.160.185.80", 
+            "server_port": 47072, 
+            "remarks": "updata_2017.05.24 01:00:48", 
+            "password": "dongtaiwang.com", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "47.89.243.62", 
+            "server_port": 12345, 
+            "remarks": "updata_2017.05.24 01:00:48", 
+            "password": "dongtaiwang.com", 
+            "method": "aes-256-cfb"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
             "server": "us.bilibilitv.pw", 
             "server_port": 16862, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "namaho.org", 
             "method": "aes-256-cfb"
         }, 
@@ -86,7 +68,7 @@
             "auth": false, 
             "server": "hk.bilibilitv.pw", 
             "server_port": 16862, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "namaho.org", 
             "method": "aes-256-cfb"
         }, 
@@ -95,7 +77,7 @@
             "auth": false, 
             "server": "jp.bilibilitv.pw", 
             "server_port": 16862, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "namaho.org", 
             "method": "aes-256-cfb"
         }, 
@@ -103,8 +85,8 @@
             "timeout": 5, 
             "auth": false, 
             "server": "107.175.95.241", 
-            "server_port": 1828, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "server_port": 2017, 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "dongtaiwang.com", 
             "method": "aes-256-cfb"
         }, 
@@ -113,7 +95,7 @@
             "auth": false, 
             "server": "76.164.224.102", 
             "server_port": 58945, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "31527782", 
             "method": "aes-256-cfb"
         }, 
@@ -122,35 +104,8 @@
             "auth": false, 
             "server": "158.69.212.186", 
             "server_port": 10423, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "KsFp88wnAX", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "128.199.195.15", 
-            "server_port": 1684, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "dongtaiwang.com", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "128.199.195.15", 
-            "server_port": 1425, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "dongtaiwang.com", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "155.254.33.84", 
-            "server_port": 8388, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "dongtaiwang.com", 
             "method": "aes-256-cfb"
         }, 
         {
@@ -158,151 +113,70 @@
             "auth": false, 
             "server": "158.69.212.21", 
             "server_port": 10409, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "U3DD7nvWjR", 
             "method": "aes-256-cfb"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "128.199.163.158", 
-            "server_port": 443, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "freess.cf", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "47.88.158.89", 
-            "server_port": 222, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "server": "153.125.234.179", 
+            "server_port": 31624, 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "ntdtv.com", 
             "method": "aes-256-cfb"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "198.98.101.14", 
-            "server_port": 443, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "u", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "45.32.9.126", 
-            "server_port": 233, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "970722", 
-            "method": "chacha20"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "52.89.166.180", 
-            "server_port": 444, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "zhizhu444", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.237.238", 
-            "server_port": 31693, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "server": "153.125.237.242", 
+            "server_port": 31723, 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "ntdtv.com", 
             "method": "aes-256-cfb"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "153.125.234.172", 
-            "server_port": 31314, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "server": "153.125.237.243", 
+            "server_port": 31980, 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "ntdtv.com", 
             "method": "aes-256-cfb"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "153.125.239.239", 
-            "server_port": 31797, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "server": "153.125.237.243", 
+            "server_port": 31691, 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "ntdtv.com", 
             "method": "aes-256-cfb"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "153.125.239.242", 
-            "server_port": 31095, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "server": "153.125.233.243", 
+            "server_port": 31547, 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "ntdtv.com", 
             "method": "aes-256-cfb"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "153.125.239.243", 
-            "server_port": 31861, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "server": "153.125.233.238", 
+            "server_port": 31070, 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "ntdtv.com", 
             "method": "aes-256-cfb"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "153.125.239.241", 
-            "server_port": 31983, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "ntdtv.com", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.239.237", 
-            "server_port": 31435, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "ntdtv.com", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.239.239", 
-            "server_port": 31077, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "ntdtv.com", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.239.243", 
-            "server_port": 31442, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "ntdtv.com", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.239.238", 
-            "server_port": 31240, 
-            "remarks": "updata_2017.05.03 00:09:24", 
-            "password": "ntdtv.com", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.239.242", 
-            "server_port": 31315, 
-            "remarks": "updata_2017.05.03 00:09:24", 
+            "server": "153.125.233.238", 
+            "server_port": 31905, 
+            "remarks": "updata_2017.05.24 01:00:48", 
             "password": "ntdtv.com", 
             "method": "aes-256-cfb"
         }, 
@@ -310,341 +184,332 @@
             "timeout": 5, 
             "auth": false, 
             "server": "108.61.246.51", 
-            "server_port": 8649, 
-            "remarks": "updata_2017.05.03 00:09:26", 
-            "password": "CJiI8KJt", 
+            "server_port": 8712, 
+            "remarks": "updata_2017.05.24 01:00:48", 
+            "password": "Z37uoeYF", 
             "method": "rc4-md5"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
             "server": "104.128.236.22", 
-            "server_port": 8650, 
-            "remarks": "updata_2017.05.03 00:09:26", 
-            "password": "4eZO8GdR", 
+            "server_port": 8713, 
+            "remarks": "updata_2017.05.24 01:00:48", 
+            "password": "5d0YsCx8", 
             "method": "rc4-md5"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
             "server": "172.246.47.195", 
-            "server_port": 8651, 
-            "remarks": "updata_2017.05.03 00:09:26", 
-            "password": "8jehjFgU", 
+            "server_port": 8714, 
+            "remarks": "updata_2017.05.24 01:00:48", 
+            "password": "VhcyxiFb", 
             "method": "rc4-md5"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
             "server": "216.189.158.147", 
-            "server_port": 15394, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "doub.io15394", 
+            "server_port": 34634, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.io34634", 
             "method": "chacha20"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
             "server": "104.160.173.141", 
-            "server_port": 15394, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "doub.io15394", 
-            "method": "20"
+            "server_port": 34634, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.io34634", 
+            "method": "chacha20"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
             "server": "64.137.208.113", 
-            "server_port": 15394, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "doub.io15394", 
+            "server_port": 34634, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.io34634", 
             "method": "chacha20"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
             "server": "45.62.245.70", 
-            "server_port": 15394, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "doub.io15394", 
+            "server_port": 34634, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.io34634", 
             "method": "chacha20"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
             "server": "64.137.243.186", 
-            "server_port": 15394, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "doub.io15394", 
+            "server_port": 34634, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.io34634", 
             "method": "chacha20"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "178.156.202.123", 
-            "server_port": 1565, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "fingerit", 
-            "method": "chacha20"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "123.206.134.177", 
-            "server_port": 14561, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "jsknjsad", 
-            "method": "chacha20"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "46.101.71.222", 
-            "server_port": 12345, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "ssr12345", 
-            "method": "chacha20"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "107.175.95.241", 
-            "server_port": 1828, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "dongtaiwang.com", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "45.77.30.106", 
-            "server_port": 8989, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "toosimple", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "64.137.242.92", 
-            "server_port": 23333, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "cloudatcost_20170416", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "107.191.58.94", 
-            "server_port": 2154, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "doub.io2154", 
-            "method": "chacha20"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "123.203.222.74", 
-            "server_port": 16815, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "HKLobert@16815", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "103.192.224.139", 
-            "server_port": 13131, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "uPntZgXjERUp", 
-            "method": "chacha20-ietf"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "47.88.172.81", 
-            "server_port": 12321, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "aliyunsg", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "47.88.52.247", 
-            "server_port": 12321, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "aliyunsv", 
-            "method": "chacha20"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "108.61.246.51", 
-            "server_port": 8276, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "hJAN4Jw0", 
-            "method": "chacha20"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "172.246.47.195", 
-            "server_port": 8278, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "RRmX1zUs", 
-            "method": "rc4-md5"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "67.21.80.198", 
-            "server_port": 15185, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "VaPzwK", 
-            "method": "rc4-md5"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "142.4.124.156", 
-            "server_port": 15185, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "VaPzwK", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "188.166.66.251", 
-            "server_port": 16666, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "doub.io_vop7Gh", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "67.21.78.225", 
-            "server_port": 678, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "ntdtv.com", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "198.46.242.216", 
-            "server_port": 443, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "+hAxN=OFj8dD", 
-            "method": "chacha20"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "173.213.88.51", 
-            "server_port": 80, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "6yLYpX8u", 
-            "method": "chacha20"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "188.226.144.127", 
-            "server_port": 2194, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "hakonechan", 
-            "method": "chacha20"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "185.122.59.3", 
+            "server": "92.223.72.36", 
             "server_port": 2333, 
-            "remarks": "updata_2017.05.03 00:09:28", 
+            "remarks": "updata_2017.05.24 01:00:57", 
             "password": "doub.io", 
-            "method": "aes-256-ctr"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "192.161.52.162", 
-            "server_port": 8888, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "doub2017", 
             "method": "aes-128-ctr"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "88.198.50.201", 
-            "server_port": 318, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "doub.io", 
-            "method": "chacha20"
+            "server": "123.207.183.142", 
+            "server_port": 31011, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "Shameful", 
+            "method": "aes-256-cfb"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
             "server": "162.243.153.224", 
             "server_port": 10001, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "doub.io", 
-            "method": "rc4-md5"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "45.55.11.18", 
-            "server_port": 3389, 
-            "remarks": "updata_2017.05.03 00:09:28", 
+            "remarks": "updata_2017.05.24 01:00:57", 
             "password": "doub.io", 
             "method": "aes-128-ctr"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "107.172.145.155", 
+            "server": "45.63.111.66", 
             "server_port": 2333, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "doub.io2333", 
-            "method": "aes-256-cfb"
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.io", 
+            "method": "aes-128-ctr"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "104.194.93.108", 
-            "server_port": 5497, 
-            "remarks": "updata_2017.05.03 00:09:28", 
+            "server": "92.223.105.33", 
+            "server_port": 2333, 
+            "remarks": "updata_2017.05.24 01:00:57", 
             "password": "doub.io", 
+            "method": "aes-128-ctr"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "123.103.252.12", 
+            "server_port": 15555, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "k9Pb6RtS", 
+            "method": "aes-128-ctr"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "123.203.223.133", 
+            "server_port": 29556, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "HKLobertDoUbIO@(29556)", 
+            "method": "chacha20-ietf"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "178.156.202.123", 
+            "server_port": 4001, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.io", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "37.59.150.1", 
+            "server_port": 9191, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.io", 
+            "method": "rc4-md5"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "202.5.21.111", 
+            "server_port": 8680, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.io233", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "64.137.242.92", 
+            "server_port": 23333, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "cloudatcost_20170416", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "67.21.78.225", 
+            "server_port": 678, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "ntdtv.com", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "198.46.242.216", 
+            "server_port": 443, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "tfK^LyFn=ic5", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "27.122.56.100", 
+            "server_port": 443, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doubi0514", 
+            "method": "aes-128-ctr"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "216.45.55.67", 
+            "server_port": 440, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.io", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "104.233.69.78", 
+            "server_port": 989, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.io", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "45.62.106.76", 
+            "server_port": 7340, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.io_snh48_7senses", 
+            "method": "aes-256-ctr"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "155.94.206.158", 
+            "server_port": 20018, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.io", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "107.172.145.155", 
+            "server_port": 2333, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.io2333", 
             "method": "none"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "163.172.40.80", 
-            "server_port": 23333, 
-            "remarks": "updata_2017.05.03 00:09:28", 
-            "password": "online_20170430", 
+            "server": "5.196.204.58", 
+            "server_port": 1000, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "viewss", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "104.129.5.73", 
+            "server_port": 8080, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.bid", 
             "method": "aes-256-cfb"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "mgm3.sspw.pw", 
+            "server": "45.77.26.183", 
             "server_port": 443, 
-            "remarks": "updata_2017.05.03 00:09:29", 
-            "password": "h6v6.com", 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "bX47xjHAU62eR3Xn", 
+            "method": "chacha20"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "188.166.15.240", 
+            "server_port": 4587, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "hakonechan\n", 
             "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "45.55.11.18", 
+            "server_port": 23333, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "doub.io", 
+            "method": "aes-128-ctr"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "155.254.33.142", 
+            "server_port": 80, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "liuxiaodong", 
+            "method": "none"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "155.254.33.143", 
+            "server_port": 80, 
+            "remarks": "updata_2017.05.24 01:00:57", 
+            "password": "liuxiaodong", 
+            "method": "none"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "188.166.186.129", 
+            "server_port": 443, 
+            "remarks": "updata_2017.05.24 01:02:07", 
+            "password": "99887802", 
+            "method": "aes-256-cfb"
+        }, 
+        {
+            "timeout": 5, 
+            "auth": false, 
+            "server": "106.186.116.88", 
+            "server_port": 443, 
+            "remarks": "updata_2017.05.24 01:02:07", 
+            "password": "16165511", 
+            "method": "rc4-md5"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
             "server": "mgm4.sspw.pw", 
             "server_port": 443, 
-            "remarks": "updata_2017.05.03 00:09:29", 
+            "remarks": "updata_2017.05.24 01:02:07", 
             "password": "h6v6.com", 
             "method": "aes-256-cfb"
         }, 
@@ -653,133 +518,16 @@
             "auth": false, 
             "server": "mgm5.sspw.pw", 
             "server_port": 443, 
-            "remarks": "updata_2017.05.03 00:09:29", 
+            "remarks": "updata_2017.05.24 01:02:07", 
             "password": "h6v6.com", 
             "method": "aes-256-cfb"
         }, 
         {
             "timeout": 5, 
             "auth": false, 
-            "server": "a.ssx.host", 
-            "server_port": 1024, 
-            "remarks": "updata_2017.05.03 00:09:30", 
-            "password": "02878238", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "b.ssx.host", 
-            "server_port": 10008, 
-            "remarks": "updata_2017.05.03 00:09:30", 
-            "password": "", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "c.ssx.host", 
-            "server_port": 10008, 
-            "remarks": "updata_2017.05.03 00:09:30", 
-            "password": "", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.234.179", 
-            "server_port": 31939, 
-            "remarks": "updata_2017.05.03 00:09:30", 
-            "password": "kingss.win", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.234.174", 
-            "server_port": 31006, 
-            "remarks": "updata_2017.05.03 00:09:30", 
-            "password": "kingss.win", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.234.173", 
-            "server_port": 31228, 
-            "remarks": "updata_2017.05.03 00:09:30", 
-            "password": "kingss.win", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.234.173", 
-            "server_port": 31187, 
-            "remarks": "updata_2017.05.03 00:09:30", 
-            "password": "kingss.win", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.232.242", 
-            "server_port": 31551, 
-            "remarks": "updata_2017.05.03 00:09:30", 
-            "password": "kingss.win", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.232.236", 
-            "server_port": 31878, 
-            "remarks": "updata_2017.05.03 00:09:30", 
-            "password": "kingss.win", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.232.236", 
-            "server_port": 31628, 
-            "remarks": "updata_2017.05.03 00:09:30", 
-            "password": "kingss.win", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.232.242", 
-            "server_port": 31659, 
-            "remarks": "updata_2017.05.03 00:09:30", 
-            "password": "kingss.win", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.232.242", 
-            "server_port": 31883, 
-            "remarks": "updata_2017.05.03 00:09:30", 
-            "password": "kingss.win", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "153.125.232.241", 
-            "server_port": 31420, 
-            "remarks": "updata_2017.05.03 00:09:30", 
-            "password": "kingss.win", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
             "server": "ss1.ubox.co", 
             "server_port": 8388, 
-            "remarks": "updata_2017.05.03 00:09:30", 
+            "remarks": "updata_2017.05.24 01:02:07", 
             "password": "password", 
             "method": "aes-256-cfb"
         }, 
@@ -788,61 +536,7 @@
             "auth": false, 
             "server": "ss6.ubox.co", 
             "server_port": 8388, 
-            "remarks": "updata_2017.05.03 00:09:30", 
-            "password": "password", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "45.78.47.87", 
-            "server_port": 443, 
-            "remarks": "updata_2017.05.03 00:09:30", 
-            "password": "laozhang", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "138.68.61.42", 
-            "server_port": 23456, 
-            "remarks": "updata_2017.05.03 00:09:35", 
-            "password": "78576192", 
-            "method": "rc4-md5"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "188.166.186.129", 
-            "server_port": 443, 
-            "remarks": "updata_2017.05.03 00:09:35", 
-            "password": "62266380", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "106.186.116.88", 
-            "server_port": 443, 
-            "remarks": "updata_2017.05.03 00:09:35", 
-            "password": "68871060", 
-            "method": "rc4-md5"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "ss1.ubox.co", 
-            "server_port": 8388, 
-            "remarks": "updata_2017.05.03 00:09:41", 
-            "password": "password", 
-            "method": "aes-256-cfb"
-        }, 
-        {
-            "timeout": 5, 
-            "auth": false, 
-            "server": "ss6.ubox.co", 
-            "server_port": 8388, 
-            "remarks": "updata_2017.05.03 00:09:41", 
+            "remarks": "updata_2017.05.24 01:02:07", 
             "password": "password", 
             "method": "aes-256-cfb"
         }, 
@@ -851,7 +545,7 @@
             "auth": false, 
             "server": "ss2.ubox.co", 
             "server_port": 8388, 
-            "remarks": "updata_2017.05.03 00:09:41", 
+            "remarks": "updata_2017.05.24 01:02:07", 
             "password": "password", 
             "method": "aes-256-cfb"
         }
