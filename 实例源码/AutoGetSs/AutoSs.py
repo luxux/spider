@@ -3,7 +3,7 @@
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
 # @Last Modified by:   KOOSUF\koosuf
-# @Last Modified time: 2017-05-24 00:59:59
+# @Last Modified time: 2017-06-03 13:08:23
 
 import re
 import os
@@ -183,7 +183,9 @@ def get_ss_vpsml(r):
     Ss_Encs = re.findall(
         '<h4>加密:(.*?)</h4>', html_doc, re.S)
 
-    load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
+    # load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
+    print("进入！！！！")
+    print(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
 
 
 def get_ss_doubi(r):
@@ -355,20 +357,20 @@ def get_ss_Alvin9999(r):
 def start_get_ss():
     urls_dict = {
         'https://doub.io/sszhfx/':  get_ss_doubi,
-        'https://xsjs.yhyhd.org/free-ss/': get_ss_yhyhd,
-        'https://www.vbox.co/': get_ss_vbox,
-        'http://ishadow.info/': get_ss_ishadow,
-        'http://ss.vpsml.site/': get_ss_vpsml,
-        'http://get.shadowsocks8.cc/': get_ss_shadowsocks8,
-        'http://www.shadowsocks.asia/mianfei/10.html': get_ss_sspw,
-        'http://ss.ishadow.world/': get_ss_sishadow,
+        # 'https://xsjs.yhyhd.org/free-ss/': get_ss_yhyhd,
+        # 'https://www.vbox.co/': get_ss_vbox,
+        # 'http://ishadow.info/': get_ss_ishadow,
+        # 'http://ss.vpsml.site/': get_ss_vpsml
+        # 'http://get.shadowsocks8.cc/': get_ss_shadowsocks8,
+        # 'http://www.shadowsocks.asia/mianfei/10.html': get_ss_sspw,
+        # 'http://ss.ishadow.world/': get_ss_sishadow,
         r'https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7':
         get_ss_Alvin9999
     }
     headers = {
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'}
     pool = ThreadPoolExecutor(len(urls_dict.keys()) + 1)
-    rs = (grequests.get(u, timeout=30, proxies=proxies, headers=headers)
+    rs = (grequests.get(u, timeout=80, proxies=proxies, headers=headers)
           for u in urls_dict.keys())
     for r in grequests.imap(rs, size=3):
         try:
@@ -394,6 +396,7 @@ def main():
     # if len(configs) < 20:
     #     os.system('cls')
     #     restart_program()
+    os.execl('ShadowsocksR-dotnet4.0.exe')
     print(u'此次更新了------------' + str(len(configs)) +
           u'-------------条数据,时间%f' % (time.time() - Tstart))
     os.system('pause')
