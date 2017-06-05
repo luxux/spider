@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # @Author: koosuf
 # @Date:   2017-02-06 02:21:38
-# @Last Modified by:   KOOSUF\koosuf
-# @Last Modified time: 2017-06-03 13:08:23
+# @Last Modified by:   koosuf
+# @Last Modified time: 2017-06-05 21:33:54
 
 import re
 import os
@@ -187,7 +187,8 @@ def get_ss_vpsml(r):
     print("进入！！！！")
     print(Ss_users, Ss_passwds, Ss_ports, Ss_Encs)
 
-
+'''由于 “未经分享者授权，望删除 doub.io 分享的免费Shadowsocks账号，不要因为这个而失去“德”。  # 5.
+所以谁使用下面这段程序，后果与我无关”
 def get_ss_doubi(r):
     # https://doub.io/sszhfx/
     Ss_users = []
@@ -227,6 +228,7 @@ def get_ss_doubi(r):
         except Exception as e:
             continue
     load_Sslist(Ss_users, Ss_passwds, Ss_ports, Ss_encs, Ss_ptl, Ss_obfs)
+------------------------------------------------------------------------------------------------'''
 
 
 def get_ss_yhyhd(r):
@@ -356,7 +358,7 @@ def get_ss_Alvin9999(r):
 
 def start_get_ss():
     urls_dict = {
-        'https://doub.io/sszhfx/':  get_ss_doubi,
+        # 'https://doub.io/sszhfx/':  get_ss_doubi,
         # 'https://xsjs.yhyhd.org/free-ss/': get_ss_yhyhd,
         # 'https://www.vbox.co/': get_ss_vbox,
         # 'http://ishadow.info/': get_ss_ishadow,
@@ -396,7 +398,6 @@ def main():
     # if len(configs) < 20:
     #     os.system('cls')
     #     restart_program()
-    os.execl('ShadowsocksR-dotnet4.0.exe')
     print(u'此次更新了------------' + str(len(configs)) +
           u'-------------条数据,时间%f' % (time.time() - Tstart))
     os.system('pause')

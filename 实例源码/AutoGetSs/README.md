@@ -6,7 +6,6 @@
 ### 需求
 
 - [x] 获取网站(~~好的网站，求推存~~)
-    - [x] [doub.io](https://doub.io/sszhfx/)
     - [x] [vpsml](http://ss.vpsml.site/)
     - [x] [vbox](https://www.vbox.co/)
     - [x] [shadowsocks8](http://free.shadowsocks8.cc/)
@@ -26,7 +25,7 @@
 ![](./img/Ss_img.jpg)
 
 ### install
-[ShadowsocksR使用详解](https://doub.io/ss-jc10/)
+自行搜索
 
 #### Windows(源码)
 
