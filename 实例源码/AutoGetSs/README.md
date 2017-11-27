@@ -6,14 +6,14 @@
 ### 需求
 
 - [x] 获取网站(~~好的网站，求推存~~)
-    - [] [~~vpsml~~](http://ss.vpsml.site/)
-    - [] [~~vbox~~](https://www.vbox.co/)
-    - [] [~~shadowsocks8~~](http://free.shadowsocks8.cc/)
-    - [] [~~ishadow~~](https://ishadow.info/)
-    - [] [~~mianfei~~](http://www.shadowsocks.asia/mianfei/10.html)
-    - [] [~~sishadow~~](http://ishadow.info/)
-    - [] [~~yhyhd~~](https://xsjs.yhyhd.org/free-ss/)
-    - [] [~~new-pac~~](https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
+    - [ ] [~~vpsml~~](http://ss.vpsml.site/)
+    - [ ] [~~vbox~~](https://www.vbox.co/)
+    - [ ] [~~shadowsocks8~~](http://free.shadowsocks8.cc/)
+    - [ ] [~~ishadow~~](https://ishadow.info/)
+    - [ ] [~~mianfei~~](http://www.shadowsocks.asia/mianfei/10.html)
+    - [ ] [~~sishadow~~](http://ishadow.info/)
+    - [ ] [~~yhyhd~~](https://xsjs.yhyhd.org/free-ss/)
+    - [ ] [~~new-pac~~](https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
 - [ ] 调试日志
 - [x] 不和原有配置发生冲突
 - [x] 多系统支持
