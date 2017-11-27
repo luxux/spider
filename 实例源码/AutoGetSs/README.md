@@ -48,12 +48,12 @@
 
 #### Windows(exe)
 
-1. 下载Auto_Ss.exe到ShadowsocksR文件夹
+1. 下载AutoSs.exe到ShadowsocksR文件夹
 
-2. 管理员运行Auto_Ss.exe,需要打开全局代理。
+2. 管理员运行AutoSs.exe,需要打开全局代理。
 
 3. ShadowsocksR更新加载gui-config.json文件
 
 4. 下载地址[Releases](https://github.com/luxux/spider/releases)
 
-### 注意: 在加载的过程中有什么任何错误提示，都可以打开ShadowsocksR全局代理。管理员运行Auto_Ss.exe **多次**
+### 注意: 在加载的过程中有什么任何错误提示，都可以打开ShadowsocksR全局代理。管理员运行AutoSs.exe **多次**
