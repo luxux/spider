@@ -5,7 +5,7 @@
 
 #### AutoGetSs
 
-抓取分享**免费Ss账号**网站，给平时使用SSR提供账号来源！可执行文件[Releases](https://github.com/luxux/spider/releases)
+抓取分享**免费账号**网站，给平时使用提供账号来源！可执行文件[Releases](https://github.com/luxux/spider/releases)
 
 #### AutoHosts
 
